@@ -1,0 +1,14 @@
+
+.DS_Store
+
+/node_modules/*
+
+/dbfix_applied/*
+
+/public/builds/*
+
+winstonLogs.log
+
+config.js
+
+restart.log
