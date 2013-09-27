@@ -3,16 +3,26 @@
  * GET home page.
  */
 
-exports.index = function(Todo) {
+exports.index = function() {
   return function(req, res) {
-    Todo.find({}, function(error, todos) {
+       console.log(req.user);
+       console.log(res.user);
       res.render('index', {
-        title: 'Express',
-        todos : todos
+        title: 'Profilo',
+        user : req.user
       });
+
+  };
+};
+
+exports.login = function() {
+  return function(req, res) {
+    res.render('login', {
+      title: 'login'
     });
   };
 };
+
 
 exports.addTodo = function(Todo) {
   return function(req, res) {
