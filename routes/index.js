@@ -1,65 +1,30 @@
+var //SessionHandler = require('./session')
+  ContentHandler = require('./content')
+  , ErrorHandler = require('./error').errorHandler;
 
-/*
- * GET home page.
- */
+module.exports = exports = function(app, db, passport) {
 
-exports.index = function() {
-  return function(req, res) {
-       console.log(req.user);
-       console.log(res.user);
-      res.render('index', {
-        title: 'Profilo',
-        user : req.user
-      });
+  //  var sessionHandler = new SessionHandler(db);
+    var contentHandler = new ContentHandler(db, passport);
+    // Middleware to see if a user is logged in
+  //  app.use(sessionHandler.isLoggedInMiddleware);
 
-  };
-};
 
-exports.login = function() {
-  return function(req, res) {
-    res.render('login', {
-      title: 'login'
+    app.get('/', contentHandler.displayMainPage);
+
+    app.get('/login', contentHandler.displayLoginPage);
+
+    app.get('/auth/facebook', function(req, res,next) {
+        console.log('ECCOCI');
+        passport.authenticate('facebook')(req, res, next);
     });
-  };
-};
 
-
-exports.addTodo = function(Todo) {
-  return function(req, res) {
-    var todo = new Todo(req.body);
-    todo.save(function(error, todo) {
-      if (error || !todo) {
-        res.json({ error : error });
-      } else {
-        res.json({ todo : todo });
-      }
+    app.get('/auth/facebook/callback', 
+        passport.authenticate('facebook', { failureRedirect: '/login' }), 
+        function(req, res) {
+           res.redirect('/');
     });
-  };
-};
 
-exports.get = function(Todo) {
-  return function(req, res) {
-    Todo.find({}, function(error, todos) {
-      res.json({ todos : todos });
-    });
-  }
-};
-
-exports.update = function(Todo) {
-  return function(req, res) {
-    Todo.findOne({ _id : req.params.id }, function(error, todo) {
-      if (error || !todo) {
-        res.json({ error : error });
-      } else {
-        todo.done = req.body.done;
-        todo.save(function(error, todo) {
-          if (error || !todo) {
-            res.json({ error : error });
-          } else {
-            res.json({ todo : todo });
-          }
-        });
-      }
-    });
-  }
-};
+    // Error handling middleware
+    app.use(ErrorHandler);
+}

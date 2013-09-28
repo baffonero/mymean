@@ -1,5 +1,5 @@
 module.exports = {
-	mongoDb		: 'bftest',
+	mongoDb		: 'giochipiu',
 	appPrefix   : 'bftest.',
 	appName     : 'bftest',
 	redisDb		: 0,

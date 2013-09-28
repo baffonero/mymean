@@ -12,7 +12,6 @@
     "underscore": "*",
     "mongodb" : ">=0.9.6-7",
     "mongoose" : ">=3.6",
-    "betfair": "0",
     "async" : "0.2.5",
     "passport" : "0.1.17",
     "passport-facebook" :"1.0.1",
