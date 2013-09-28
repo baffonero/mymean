@@ -14,8 +14,9 @@ module.exports = exports = function(app, db, passport) {
 
     app.get('/login', contentHandler.displayLoginPage);
 
+    app.get('/users', contentHandler.displayUsersPage);
+
     app.get('/auth/facebook', function(req, res,next) {
-        console.log('ECCOCI');
         passport.authenticate('facebook')(req, res, next);
     });
 

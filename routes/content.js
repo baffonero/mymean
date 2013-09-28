@@ -1,11 +1,11 @@
-var AdminsDAO = require('../models/admins').AdminsDAO; // Helper to sanitize form input
+var UsersDAO = require('../models/users').UsersDAO; // Helper to sanitize form input
 
 
 /* The ContentHandler must be constructed with a connected db */
 function ContentHandler (db) {
     "use strict";
 
-    //var posts = new PostsDAO(db);
+    var users = new UsersDAO(db);
 
     this.displayMainPage = function(req, res, next) {
         "use strict";
@@ -23,7 +23,22 @@ function ContentHandler (db) {
         return res.render('login', {
             title: 'Login'
         });
-    }    
+    }   
+
+    this.displayUsersPage = function(req, res, next) {
+        "use strict";
+
+        users.getUsers({}, function(err, results) {
+            "use strict";
+
+            if (err) return next(err);
+            console.log("RESULTS", results.length);
+            return res.render('users', {
+                title: 'Users',
+                users: results
+            });
+        });
+    }
 
 }
 

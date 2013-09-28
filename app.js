@@ -4,9 +4,12 @@ var express = require('express')
   , http = require('http')
   , db = require('./modules/db-manager')
   , routes = require('./routes')
-  , passport = require('passport');
+  , passport = require('passport')
+  , AdminsDAO = require('./models/admins').AdminsDAO;
 
-var app = express();
+  var app = express();
+
+  var admins = new AdminsDAO(db);
 
   passport.serializeUser(function(user, done) {
     done(null, user);
@@ -22,7 +25,7 @@ var app = express();
       clientSecret: 'dcb00458932d915acd34ca5a23f843ed',
       callbackURL: "http://www.malatodiroma.com:3000/auth/facebook/callback"
     },
-    function(accessToken, refreshToken, profile, done) {
+    /*function(accessToken, refreshToken, profile, done) {
       // asynchronous verification, for effect...
       process.nextTick(function () {
         
@@ -32,17 +35,16 @@ var app = express();
         // and return that user instead.
         return done(null, profile);
       });
-    }    
-    /*function(accessToken, refreshToken, profile, done) {
-      console.log('ECCOCI2');
-      AM.findOrCreateUser(profile._json, function(err, user) {
-          if (errd) {
+    } */   
+    function(accessToken, refreshToken, profile, done) {
+      admins.findOrCreate(profile._json, function(err, user) {
+          if (err) {
             return done(err, null); 
           } else {
             return done(null, user); 
           }
       });
-    }*/
+    }
   ));
 
   app.set('views', __dirname + '/views');
