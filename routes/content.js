@@ -28,17 +28,19 @@ function ContentHandler (db) {
     this.displayUsersPage = function(req, res, next) {
         "use strict";
 
-        users.getUsers({}, function(err, results) {
-            "use strict";
-
-            if (err) return next(err);
-            console.log("RESULTS", results.length);
-            return res.render('users', {
-                title: 'Users',
-                users: results
-            });
+        return res.render('users', {
+            title: 'Users'
         });
+
     }
+
+    this.getUsers= function(req, res, next) {
+        "use strict";
+        users.getUsers({}, function(err, users) {
+          return res.json({ users : users });
+        });
+
+    }    
 
 }
 

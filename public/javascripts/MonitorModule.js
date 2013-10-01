@@ -1,0 +1,1 @@
+angular.module('MonitorModule', ['ui.bootstrap']);

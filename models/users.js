@@ -34,7 +34,7 @@ function UsersDAO(db) {
    this.getUsers = function(query, callback) {
         "use strict";
 
-        var q = users.find(query).limit(50);
+        var q = users.find(query).limit(3);
 
         q.exec(function(err, results) {
             "use strict";
