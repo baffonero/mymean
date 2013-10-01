@@ -6,12 +6,28 @@ block head
 block content 
   script(type="text/javascript")
     var sortingOrder = 'name';
-  //class="row"  
-  div.container(class="col-md-8" ng-controller="UserController", ng-init="getUsers()")
-    h1 Users
-    table(class=["table", "table-striped", "table-hover", "table-condensed", "table-responsive"])
-      tbody
-        tr.row.todo.not-done(ng-repeat="user in users")
-            td{{user._id}}
-            td{{user.name}} 
-            td{{user.nick}}           
+  div.row  
+    div.container(class="col-md-4" ng-controller="UserController", ng-init="getUsers()")
+        h2 Nuovi Utenti
+        table(class=["table", "table-striped", "table-hover", "table-condensed", "table-responsive"])
+
+          tbody
+            th.row
+                td Data
+                td Utenti
+            tr.row(ng-repeat="user in users")
+                td{{user._id.giorno}}/{{user._id.mese}}/{{user._id.anno}}
+                td{{user.tot}} 
+    div.container(class="col-md-4" ng-controller="UserController", ng-init="getGames()")
+        h2 Partite
+        table(class=["table", "table-striped", "table-hover", "table-condensed", "table-responsive"])
+
+          tbody
+            th.row
+                td Data
+                td Partite
+                td Multiplayer
+            tr.row(ng-repeat="game in games")
+                td{{game._id.giorno}}/{{game._id.mese}}/{{game._id.anno}}
+                td{{game.tot}} 
+                td{{game.multiplayer}} 

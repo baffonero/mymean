@@ -1,4 +1,5 @@
 var UsersDAO = require('../models/users').UsersDAO; // Helper to sanitize form input
+var ScoresDAO = require('../models/scores').ScoresDAO; // Helper to sanitize form input
 
 
 /* The ContentHandler must be constructed with a connected db */
@@ -6,6 +7,7 @@ function ContentHandler (db) {
     "use strict";
 
     var users = new UsersDAO(db);
+    var scores = new ScoresDAO(db);
 
     this.displayMainPage = function(req, res, next) {
         "use strict";
@@ -41,6 +43,22 @@ function ContentHandler (db) {
         });
 
     }    
+
+    this.getLastWeekUsers= function(req, res, next) {
+        "use strict";
+        users.getLastWeekUsers({}, function(err, users) {
+          return res.json({ users : users });
+        });
+
+    }    
+
+    this.getLastWeekGames= function(req, res, next) {
+        "use strict";
+        scores.getLastWeekGames({}, function(err, games) {
+          return res.json({ games : games });
+        });
+
+    }       
 
 }
 

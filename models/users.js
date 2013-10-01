@@ -48,6 +48,27 @@ function UsersDAO(db) {
         });
     }
 
+   this.getLastWeekUsers = function(query, callback) {
+        "use strict";
+
+        var numGG = 14;
+        var endDate = new Date("2013-09-11");//.toISOString();
+        var startDate = new Date(endDate);
+        startDate.setDate(startDate.getDate() - numGG);
+        var match = {created: {$gt: startDate,$lt: endDate}};
+
+        console.log("match", match);
+
+        users.aggregate({$project:{created:1, multiplayer:{$cond:[{$eq:["$guidopp",null]},0,1]}}},{$match: match  }, { $group : { _id : {giorno: {$dayOfMonth:"$created"}, mese: {$month:"$created"}, anno: {$year:"$created"}}, tot:{$sum:1}, multi: { $sum : "$multiplayer" } } }, {$sort: {"_id.anno":-1,"_id.mese":-1,"_id.giorno":-1} },
+        function(err, results) {
+            if (!err) {
+                console.log(JSON.stringify(results));
+                return callback(null, results);
+            }
+
+            return callback(err, null);
+        });
+    }
 
 }
 
