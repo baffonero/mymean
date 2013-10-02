@@ -10,3 +10,4 @@ Version id
 
 "Vn30effoRW+koOfsTOtUAU+Hp5acBWKGpK7iyTl+SWM="
 
+http://stackoverflow.com/questions/10164312/node-js-express-js-passport-js-stay-authenticated-between-server-restart
