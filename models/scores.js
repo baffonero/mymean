@@ -33,7 +33,7 @@ function ScoresDAO(db) {
         "use strict";
 
         var numGG = 14;
-        var endDate = new Date("2013-08-10");//.toISOString();
+        var endDate = new Date();//.toISOString();
         var startDate = new Date(endDate);
         startDate.setDate(startDate.getDate() - numGG);
         var match = {created: {$gt: startDate,$lt: endDate}};
