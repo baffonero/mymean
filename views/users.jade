@@ -5,29 +5,46 @@ block head
 
 block content 
   script(type="text/javascript")
-    var sortingOrder = 'name';
-  div.row  
-    div.container(class="col-md-4" ng-controller="UserController", ng-init="getUsers()")
-        h2 Nuovi Utenti
-        table(class=["table", "table-striped", "table-hover", "table-condensed", "table-responsive"])
+    //var sortingOrder = 'name';
+  
+  div.tabbable
+      ul.maintab(class=["nav", "nav-tabs"])  
+        li(class="active") 
+          a(ref="#utenti" data-toggle="tab") Utenti 
+        li 
+          a(href="#partite" data-toggle="tab") Partite
+        li 
+          a(href="#altro" data-toggle="tab") Altro
 
-          tbody
-            th.row
-                td Data
-                td Utenti
-            tr.row(ng-repeat="user in users")
-                td{{user._id.giorno}}/{{user._id.mese}}/{{user._id.anno}}
-                td{{user.tot}} 
-    div.container(class="col-md-4" ng-controller="UserController", ng-init="getGames()")
-        h2 Partite
-        table(class=["table", "table-striped", "table-hover", "table-condensed", "table-responsive"])
+      div(class="tab-content")
+        #utenti(class=["tab-pane","active"])
+          div ciao1
+              div.row 
+                div.container(class="col-md-4" ng-controller="UserController", ng-init="getUsers()")
+                    h2 Nuovi Utenti
+                    table(class=["table", "table-striped", "table-hover", "table-condensed", "table-responsive"])
 
-          tbody
-            th.row
-                td Data
-                td Partite
-                td Multiplayer
-            tr.row(ng-repeat="game in games")
-                td{{game._id.giorno}}/{{game._id.mese}}/{{game._id.anno}}
-                td{{game.tot}} 
-                td{{game.multiplayer}} 
+                      tbody
+                        th.row
+                            td Data
+                            td Utenti
+                        tr.row(ng-repeat="user in users")
+                            td{{user._id.giorno}}/{{user._id.mese}}/{{user._id.anno}}
+                            td{{user.tot}} 
+                div.container(class="col-md-4" ng-controller="UserController", ng-init="getGames()")
+                    h2 Partite
+                    table(class=["table", "table-striped", "table-hover", "table-condensed", "table-responsive"])
+
+                      tbody
+                        th.row
+                            td Data
+                            td Partite
+                            td Multiplayer
+                        tr.row(ng-repeat="game in games")
+                            td{{game._id.giorno}}/{{game._id.mese}}/{{game._id.anno}}
+                            td{{game.tot}} 
+                            td{{game.multiplayer}}   
+        #partite(class="tab-pane") CIAO
+        #altro(class="tab-pane") CIAO2
+
+  
