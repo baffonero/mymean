@@ -8,7 +8,7 @@ block content
   div(class="tabbable")
       ul(class=["nav", "nav-tabs"])  
         li(class="active")
-          a(href="#home" data-toggle="tab") Utenti 
+          a(href="#home" data-toggle="tab") Home 
         li 
           a(href="#partite" data-toggle="tab") Partite
         li 
@@ -16,30 +16,57 @@ block content
 
       div(class="tab-content")
         #home(class=["tab-pane","active"])
-        #partite(class="tab-pane") 
+        
           div.row 
-            div.container(class="col-md-4" ng-controller="UserController", ng-init="getUsers()")
+            div.container(class="col-md-4" ng-controller="UserController", ng-init="getPastUsers()")
                 h2 Nuovi Utenti
                 table(class=["table", "table-striped", "table-hover", "table-condensed", "table-responsive"])
                   tbody
                     th.row
                         td Data
                         td Utenti
-                    tr.row(ng-repeat="user in users")
-                        td{{user._id.giorno}}/{{user._id.mese}}/{{user._id.anno}}
-                        td{{user.tot}} 
-            div.container(class="col-md-4" ng-controller="UserController", ng-init="getGames()")
+                        td Alle {{datetime}}
+                    tr.row
+                        td OGGI
+                        td{{todayUsers}} 
+                        td{{todayUsers}}                         
+                    tr.row(ng-repeat="lastDaysUser in lastDaysUsers")
+                        td{{lastDaysUser._id.giorno}}/{{lastDaysUser._id.mese}}/{{lastDaysUser._id.anno}}
+                        td{{lastDaysUser.tot}} 
+                        td{{lastDaysUser.instant}} 
+                    tr.row(ng-repeat="lastMonthUser in lastMonthUsers")
+                        td Ultimi 30 giorni
+                        td{{lastMonthUser.tot}} 
+                        td{{lastMonthUser.instant}} 
+                    tr.row(ng-repeat="overallUser in overallUsers")
+                        td Di Sempre
+                        td{{overallUser.tot}} 
+                        td{{overallUser.instant}}        
+            div.container(class="col-md-4" ng-controller="UserController", ng-init="getPastGames()")
                 h2 Partite
                 table(class=["table", "table-striped", "table-hover", "table-condensed", "table-responsive"])
                   tbody
                     th.row
                         td Data
                         td Partite
-                        td Multiplayer
-                    tr.row(ng-repeat="game in games")
-                        td{{game._id.giorno}}/{{game._id.mese}}/{{game._id.anno}}
-                        td{{game.tot}} 
-                        td{{game.multiplayer}}          
+                        td Alle {{datetime}}
+                    tr.row
+                        td OGGI
+                        td{{todayGames}} 
+                        td{{todayGames}}                         
+                    tr.row(ng-repeat="lastDaysGame in lastDaysGames")
+                        td{{lastDaysGame._id.giorno}}/{{lastDaysGame._id.mese}}/{{lastDaysGame._id.anno}}
+                        td{{lastDaysGame.tot}} 
+                        td{{lastDaysGame.instant}} 
+                    tr.row(ng-repeat="lastMonthGame in lastMonthGames")
+                        td Ultimi 30 giorni
+                        td{{lastMonthGame.tot}} 
+                        td{{lastMonthGame.instant}} 
+                    tr.row(ng-repeat="overallGame in overallGames")
+                        td Di Sempre
+                        td{{overallGame.tot}} 
+                        td{{overallGame.instant}}  
+        #partite(class="tab-pane")                          
         #altro(class="tab-pane") 
 
   

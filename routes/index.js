@@ -17,8 +17,10 @@ module.exports = exports = function(app, db, passport) {
     app.get('/users', contentHandler.displayUsersPage);
 
     app.get('/getusers', contentHandler.getUsers);
-    app.get('/getlastweekusers', contentHandler.getLastWeekUsers);
-    app.get('/getlastweekgames', contentHandler.getLastWeekGames);
+    app.get('/getpastusers', contentHandler.getPastUsers);
+    app.get('/getpastgames', contentHandler.getPastGames);
+    app.get('/gettodayusers', contentHandler.getTodayUsers);
+    app.get('/gettodaygames', contentHandler.getTodayGames);    
 
     app.get('/auth/facebook', function(req, res,next) {
         passport.authenticate('facebook')(req, res, next);

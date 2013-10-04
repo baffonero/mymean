@@ -44,21 +44,37 @@ function ContentHandler (db) {
 
     }    
 
-    this.getLastWeekUsers= function(req, res, next) {
+    this.getPastUsers= function(req, res, next) {
         "use strict";
-        users.getLastWeekUsers({}, function(err, users) {
+        users.getPastUsers({}, function(err, users) {
           return res.json({ users : users });
         });
 
     }    
 
-    this.getLastWeekGames= function(req, res, next) {
+    this.getPastGames= function(req, res, next) {
         "use strict";
-        scores.getLastWeekGames({}, function(err, games) {
+        scores.getPastGames({}, function(err, games) {
           return res.json({ games : games });
         });
 
-    }       
+    }  
+
+    this.getTodayUsers= function(req, res, next) {
+        "use strict";
+        users.getTodayUsers(function(err, users) {
+          return res.json({ users : users });
+        });
+
+    }    
+
+    this.getTodayGames= function(req, res, next) {
+        "use strict";
+        scores.getTodayGames(function(err, games) {
+          return res.json({ games : games });
+        });
+
+    }          
 
 }
 
