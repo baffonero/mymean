@@ -76,7 +76,7 @@ function ModelsDAO(db) {
             startDate.setDate(startDate.getDate() - numGG);
             startDate.setHours(0,0,0,0);
         } else {
-          var startDate = new Date("2013-09-23"); 
+          var startDate = new Date("2013-08-23"); 
           startDate.setHours(0,0,0,0);
           numGG = Math.round(Math.abs((endDate.getTime() - startDate.getTime())/(oneDay))); 
         }
