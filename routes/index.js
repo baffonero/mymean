@@ -12,8 +12,8 @@ module.exports = exports = function(app, db, passport) {
 
     app.get('/login', contentHandler.displayLoginPage);
 
-    app.post('/getpastobj', contentHandler.getPastObj);
-    app.post('/gettodayobj', contentHandler.getTodayObj);
+    app.post('/getpastobj', authHandler.ensureAuthenticated, contentHandler.getPastObj);
+    app.post('/gettodayobj', authHandler.ensureAuthenticated, contentHandler.getTodayObj);
 
 //    app.get('/getpastobj', authHandler.ensureAuthenticated, contentHandler.getPastObj);
 //    app.get('/gettodayobj', authHandler.ensureAuthenticated, contentHandler.getTodayObj);
