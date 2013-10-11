@@ -11,6 +11,9 @@ var express = require('express')
 
   var admins = new AdminsDAO(db);
 
+  
+
+
   passport.serializeUser(function(user, done) {
     done(null, user);
   });
@@ -41,7 +44,11 @@ var express = require('express')
           if (err) {
             return done(err, null); 
           } else {
-            return done(null, user); 
+            if (user) {
+              return done(null, user); 
+            } else {
+              return done("Utente non Trovato",null);
+            }  
           }
       });
     }
@@ -54,7 +61,7 @@ var express = require('express')
   app.use(express.cookieParser());
   app.use(express.bodyParser());
   app.use(express.methodOverride());
-  app.use(express.session({ secret: 'keyboard cat' }));
+  app.use(express.session({ cookie: { maxAge: 60000 }, secret: 'keyboard cat' }));
   // Initialize Passport!  Also use passport.session() middleware, to support
   // persistent login sessions (recommended).
   app.use(passport.initialize());
@@ -62,6 +69,15 @@ var express = require('express')
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
 
+  app.get('/auth/facebook', function(req, res,next) {
+      passport.authenticate('facebook')(req, res, next);
+  });
+
+  app.get('/auth/facebook/callback', 
+      passport.authenticate('facebook', { failureRedirect: '/login' }), 
+      function(req, res) {
+         res.redirect('/');
+  });
 
 // development only
 if ('development' == app.get('env')) {

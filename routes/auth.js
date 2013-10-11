@@ -1,11 +1,10 @@
-function AuthHandler (db) {
+function AuthHandler () {
     "use strict";
-
-    //var posts = new PostsDAO(db);
 
     this.ensureAuthenticated = function(req, res, next) {
         "use strict";
-          if (req.isAuthenticated()) { return next(); }
+          console.log("user",req.user);
+          if (req.user) { return next(); }
           res.redirect('/login');
     } 
 

@@ -1,13 +1,15 @@
-var UsersDAO = require('../models/users').UsersDAO; // Helper to sanitize form input
-var ScoresDAO = require('../models/scores').ScoresDAO; // Helper to sanitize form input
+//var UsersDAO = require('../models/users').UsersDAO; // Helper to sanitize form input
+//var ScoresDAO = require('../models/scores').ScoresDAO;
+var ModelsDAO = require('../models/models').ModelsDAO; // Helper to sanitize form input
 
 
 /* The ContentHandler must be constructed with a connected db */
 function ContentHandler (db) {
     "use strict";
 
-    var users = new UsersDAO(db);
-    var scores = new ScoresDAO(db);
+    //var users = new UsersDAO(db);
+    //var scores = new ScoresDAO(db);
+    var models = new ModelsDAO(db);
 
     this.displayMainPage = function(req, res, next) {
         "use strict";
@@ -36,45 +38,23 @@ function ContentHandler (db) {
 
     }
 
-    this.getUsers= function(req, res, next) {
-        "use strict";
-        users.getUsers({}, function(err, users) {
-          return res.json({ users : users });
+    this.getPastObj= function(req, res, next) {
+        models.getPastObj(req.body.coll, function(err, obj) {
+          console.log("1", req.body.coll, obj);
+          return res.json({ obj : obj });
         });
 
     }    
 
-    this.getPastUsers= function(req, res, next) {
-        "use strict";
-        users.getPastUsers({}, function(err, users) {
-          return res.json({ users : users });
+    this.getTodayObj= function(req, res, next) {
+
+        models.getTodayObj(req.body.coll, function(err, obj) {
+            console.log("2", req.body.coll, obj);
+          return res.json({ obj : obj });
         });
 
     }    
-
-    this.getPastGames= function(req, res, next) {
-        "use strict";
-        scores.getPastGames({}, function(err, games) {
-          return res.json({ games : games });
-        });
-
-    }  
-
-    this.getTodayUsers= function(req, res, next) {
-        "use strict";
-        users.getTodayUsers(function(err, users) {
-          return res.json({ users : users });
-        });
-
-    }    
-
-    this.getTodayGames= function(req, res, next) {
-        "use strict";
-        scores.getTodayGames(function(err, games) {
-          return res.json({ games : games });
-        });
-
-    }          
+       
 
 }
 

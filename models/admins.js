@@ -38,7 +38,7 @@ function AdminsDAO(db) {
         admins.find({fbid: user.id},function (err, result) {
             "use strict";
 
-            if (!err) {
+            if (!err && result[0]) {
                 console.log("found user");
                 return callback(null, result[0]);
             }

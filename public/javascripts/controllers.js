@@ -5,30 +5,30 @@ function UserController($scope, $http) {
   $scope.datetime = actDate.getHours()+":"+actDate.getMinutes();
 
   $scope.getTodayUsers = function() {
-    $http.get('/gettodayusers').success(function(data) {
-      $scope.todayUsers = data.users.todayUsers;
+    $http({url:'/gettodayobj', method: "POST", data: {coll:"users"}}).success(function(data) {    
+      $scope.todayUsers = data.obj.todayObj;
     });    
   }  
 
   $scope.getPastUsers = function() {
-    $http.get('/getpastusers').success(function(data) {
-      $scope.lastDaysUsers = data.users.lastDaysUsers;
-      $scope.lastMonthUsers = data.users.lastMonthUsers;
-      $scope.overallUsers = data.users.overallUsers;
+    $http({url:'/getpastobj', method: "POST", data: {coll:"users"}}).success(function(data) {    
+      $scope.lastDaysUsers = data.obj.lastDaysObj;
+      $scope.lastMonthUsers = data.obj.lastMonthObj;
+      $scope.overallUsers = data.obj.overallObj;
       $scope.getTodayUsers();
     });
   };
 
   $scope.getTodayGames = function() {
-    $http.get('/gettodaygames').success(function(data) {
-      $scope.todayGames = data.games.todayGames;
+    $http({url:'/gettodayobj', method: "POST", data: {coll:"scopa.scores"}}).success(function(data) {
+      $scope.todayGames = data.obj.todayObj;
     });    
   }  
   $scope.getPastGames = function() {
-    $http.get('/getpastgames').success(function(data) {
-      $scope.lastDaysGames = data.games.lastDaysGames;
-      $scope.lastMonthGames = data.games.lastMonthGames;
-      $scope.overallGames = data.games.overallGames;
+    $http({url:'/getpastobj', method: "POST", data: {coll:"scopa.scores"}}).success(function(data) {
+      $scope.lastDaysGames = data.obj.lastDaysObj;
+      $scope.lastMonthGames = data.obj.lastMonthObj;
+      $scope.overallGames = data.obj.overallObj;
       $scope.getTodayGames();
     });
   
