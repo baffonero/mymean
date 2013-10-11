@@ -5,14 +5,12 @@ var express = require('express')
   , db = require('./modules/db-manager')
   , routes = require('./routes')
   , passport = require('passport')
+  , config  = require('./config.js')
   , AdminsDAO = require('./models/admins').AdminsDAO;
 
   var app = express();
 
   var admins = new AdminsDAO(db);
-
-  
-
 
   passport.serializeUser(function(user, done) {
     done(null, user);
@@ -26,7 +24,7 @@ var express = require('express')
   passport.use(new FacebookStrategy({
       clientID: '548998881848221',
       clientSecret: 'a4455b27478eb3d86db1a7836b0e3902',
-      callbackURL: "http://monitor.digitalmoka.com:3000/auth/facebook/callback"
+      callbackURL:  "http://"+config.url+":"+config.port+"/auth/facebook/callback"
     },
     /*function(accessToken, refreshToken, profile, done) {
       // asynchronous verification, for effect...

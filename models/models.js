@@ -22,6 +22,8 @@ function ModelsDAO(db) {
         var collModel = db.model(coll, CollS);
         return collModel;            
     }
+    var off = new Date().getTimezoneOffset();
+    off = Math.abs(off)*60*1000;
     
 
    this.getTodayObj = function(coll, query, callback) {
@@ -83,9 +85,10 @@ function ModelsDAO(db) {
         match.created = {$gt: startDate,$lt: endDate};
 
          //console.log("match",match);
-
         cmodel(coll).aggregate(
-            {$match: match  }, 
+            {$match: match  },
+        {$project:
+        {created:{$add:["$created",off]}}}, 
             {$project:
                 {created:1,                 
                  instant: {$cond:[{$lte: [{ $add: [{ $multiply: [ { $hour: '$created' }, 60 ] }, { $minute: '$created' } ] }, endMinute]},1,0]}
@@ -104,6 +107,27 @@ function ModelsDAO(db) {
 
             return callback(err, null);
         });
+
+        /*cmodel(coll).aggregate(
+            {$match: match  }, 
+            {$project:
+                {created:1,                 
+                 instant: {$cond:[{$lte: [{ $add: [{ $multiply: [ { $hour: '$created' }, 60 ] }, { $minute: '$created' } ] }, endMinute]},1,0]}
+                }
+            },
+            { $group : 
+                { _id : "AVERAGE", tot:{$sum:1}, instant:{$sum:"$instant"} 
+                } 
+            },
+        function(err, results) {
+            if (!err) {
+                results[0].tot = Math.round(results[0].tot/numGG);
+                results[0].instant = Math.round(results[0].instant/numGG);
+                return callback(null, results);
+            }
+
+            return callback(err, null);
+        });*/
     }
 
    this.getLastDaysObj = function(coll, numDay, query, callback) {
@@ -125,7 +149,7 @@ function ModelsDAO(db) {
 
         //console.log("match", match);
 
-        cmodel(coll).aggregate(
+        /*cmodel(coll).aggregate(
             {$match: match  }, 
             {$project:
                 {created:1,                 
@@ -143,7 +167,28 @@ function ModelsDAO(db) {
             }
 
             return callback(err, null);
-        });
+        });*/
+        cmodel(coll).aggregate(
+            {$match: match  },
+            {$project:
+        {created:{$add:["$created",off]}}},  
+            {$project:
+                {created:1,                 
+                 instant: {$cond:[{$lte: [{ $add: [{ $multiply: [ { $hour: '$created' }, 60 ] }, { $minute: '$created' } ] }, endMinute]},1,0]}
+                }
+            },
+            { $group : 
+                { _id : {giorno: {$dayOfMonth:"$created"}, mese: {$month:"$created"}, anno: {$year:"$created"}}, tot:{$sum:1}, instant:{$sum:"$instant"} 
+                } 
+            },             
+            {$sort: {"_id.anno":-1,"_id.mese":-1,"_id.giorno":-1} },
+        function(err, results) {
+            if (!err) {
+                return callback(null, results);
+            }
+
+            return callback(err, null);
+        });        
     }
 
 }
