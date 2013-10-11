@@ -39,7 +39,7 @@ function ContentHandler (db) {
     }
 
     this.getPastObj= function(req, res, next) {
-        models.getPastObj(req.body.coll, function(err, obj) {
+        models.getPastObj(req.body.coll, req.body.query, function(err, obj) {
           console.log("1", req.body.coll, obj);
           return res.json({ obj : obj });
         });
@@ -48,7 +48,7 @@ function ContentHandler (db) {
 
     this.getTodayObj= function(req, res, next) {
 
-        models.getTodayObj(req.body.coll, function(err, obj) {
+        models.getTodayObj(req.body.coll, req.body.query, function(err, obj) {
             console.log("2", req.body.coll, obj);
           return res.json({ obj : obj });
         });

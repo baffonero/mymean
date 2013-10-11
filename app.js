@@ -24,9 +24,9 @@ var express = require('express')
 
 
   passport.use(new FacebookStrategy({
-      clientID: '197775320242143',
-      clientSecret: 'dcb00458932d915acd34ca5a23f843ed',
-      callbackURL: "http://www.malatodiroma.com:3000/auth/facebook/callback"
+      clientID: '548998881848221',
+      clientSecret: 'a4455b27478eb3d86db1a7836b0e3902',
+      callbackURL: "http://monitor.digitalmoka.com:3000/auth/facebook/callback"
     },
     /*function(accessToken, refreshToken, profile, done) {
       // asynchronous verification, for effect...

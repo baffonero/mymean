@@ -5,13 +5,13 @@ function UserController($scope, $http) {
   $scope.datetime = actDate.getHours()+":"+actDate.getMinutes();
 
   $scope.getTodayUsers = function() {
-    $http({url:'/gettodayobj', method: "POST", data: {coll:"users"}}).success(function(data) {    
+    $http({url:'/gettodayobj', method: "POST", data: {coll:"users", query:{"gamesdet.scopa": {$exists:true}}}}).success(function(data) {    
       $scope.todayUsers = data.obj.todayObj;
     });    
   }  
 
   $scope.getPastUsers = function() {
-    $http({url:'/getpastobj', method: "POST", data: {coll:"users"}}).success(function(data) {    
+    $http({url:'/getpastobj', method: "POST", data: {coll:"users", query:{"gamesdet.scopa": {$exists:true}}}}).success(function(data) {    
       $scope.lastDaysUsers = data.obj.lastDaysObj;
       $scope.lastMonthUsers = data.obj.lastMonthObj;
       $scope.overallUsers = data.obj.overallObj;

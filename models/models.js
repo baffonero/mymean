@@ -24,13 +24,14 @@ function ModelsDAO(db) {
     }
     
 
-   this.getTodayObj = function(coll, callback) {
+   this.getTodayObj = function(coll, query, callback) {
         "use strict";
         var startDate = new Date();//.toISOString();
         startDate.setHours(0,0,0,0);
 
-        var match = {"gamesdet.scopa": {$exists:true}, created: {$gte: startDate}};
-
+        var match = query||{};
+        match.created = {$gte: startDate};
+        console.log("match",match);
         var resObj = {}; 
         var that = this;
         cmodel(coll).count(match,function(err, results){
@@ -38,7 +39,7 @@ function ModelsDAO(db) {
             return callback(err, resObj);
         });                
     }    
-   this.getPastObj = function(coll, callback) {
+   this.getPastObj = function(coll, query, callback) {
         "use strict";
 
         var numlastDays = 7;
@@ -47,11 +48,11 @@ function ModelsDAO(db) {
         var resObj = {}; 
 
         var that = this;
-        that.getLastDaysObj(coll, numlastDays,function(err, results){
+        that.getLastDaysObj(coll, numlastDays,query, function(err, results){
             resObj.lastDaysObj = results;
-            that.getAverageObj(coll, numlastMonth,function(err, results){
+            that.getAverageObj(coll, numlastMonth,query, function(err, results){
                 resObj.lastMonthObj = results;
-                that.getAverageObj(coll, null,function(err, results){
+                that.getAverageObj(coll, null,query, function(err, results){
                     resObj.overallObj = results;
                     return callback(err, resObj);
                 });                
@@ -60,7 +61,7 @@ function ModelsDAO(db) {
 
     }
 
-   this.getAverageObj = function(coll, numDay, callback) {
+   this.getAverageObj = function(coll, numDay, query, callback) {
         "use strict";
         var oneDay = 24*60*60*1000; 
         var numGG = numDay;
@@ -78,9 +79,10 @@ function ModelsDAO(db) {
           numGG = Math.round(Math.abs((endDate.getTime() - startDate.getTime())/(oneDay))); 
         }
 
-        var match = {"gamesdet.scopa": {$exists:true}, created: {$gt: startDate,$lt: endDate}};
+        var match = query||{};
+        match.created = {$gt: startDate,$lt: endDate};
 
-        console.log("match",match);
+         //console.log("match",match);
 
         cmodel(coll).aggregate(
             {$match: match  }, 
@@ -104,7 +106,7 @@ function ModelsDAO(db) {
         });
     }
 
-   this.getLastDaysObj = function(coll, numDay, callback) {
+   this.getLastDaysObj = function(coll, numDay, query, callback) {
         "use strict";
 
         var numGG = numDay;
@@ -112,13 +114,16 @@ function ModelsDAO(db) {
         var startDate = new Date(endDate);
         startDate.setDate(startDate.getDate() - numGG);
         startDate.setHours(0,0,0,0);
-        var match = {"gamesdet.scopa": {$exists:true}, created: {$gt: startDate,$lt: endDate}};
+
+        var match = query||{};
+        match.created = {$gt: startDate,$lt: endDate};
+
         var endMinute = (endDate.getHours()*60) + endDate.getMinutes();
         endDate.setHours(0,0,0,0);
-        console.log("endMinute", endMinute);
+        //console.log("endMinute", endMinute);
 
 
-        console.log("match", match);
+        //console.log("match", match);
 
         cmodel(coll).aggregate(
             {$match: match  }, 
