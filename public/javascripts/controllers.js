@@ -1,8 +1,6 @@
 function UserController($scope, $http) {
   $scope.users = [];
   $scope.scores = [];
-  var actDate = new Date();
-  $scope.datetime = actDate.getHours()+":"+actDate.getMinutes();
 
   $scope.getTodayUsers = function() {
     $http({url:'/gettodayobj', method: "POST", data: JSON.stringify({coll:"users", query:{"gamesdet.scopa": {$exists:true}}})}).success(function(data) {    
@@ -24,6 +22,12 @@ function UserController($scope, $http) {
       $scope.todayGames = data.obj.todayObj;
     });    
   }  
+
+  $scope.getDatetime = function() {
+    var actDate = new Date();
+    $scope.datetime = actDate.getHours()+":"+actDate.getMinutes();   
+  }  
+
   $scope.getPastGames = function() {
     $http({url:'/getpastobj', method: "POST", data: JSON.stringify({coll:"scopa.scores"})}).success(function(data) {
       $scope.lastDaysGames = data.obj.lastDaysObj;
@@ -34,6 +38,7 @@ function UserController($scope, $http) {
   
     setInterval(function() {
       $scope.getTodayGames();
+      $scope.getDatetime();
       $scope.getTodayUsers();
     }, 5 * 1000); // update every 5 seconds;
   };  
