@@ -84,7 +84,7 @@ function ModelsDAO(db) {
         var match = query||{};
         match.created = {$gt: startDate,$lt: endDate};
 
-         //console.log("match",match);
+         console.log("numDay", numDay,"numGG",numGG, "match",match);
         cmodel(coll).aggregate(
             {$match: match  },
         {$project:
