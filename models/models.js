@@ -33,7 +33,7 @@ function ModelsDAO(db) {
 
         var match = query||{};
         match.created = {$gte: startDate};
-        console.log("match",match);
+        //console.log("match",match);
         var resObj = {}; 
         var that = this;
         cmodel(coll).count(match,function(err, results){
