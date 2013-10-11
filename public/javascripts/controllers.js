@@ -10,6 +10,7 @@ function UserController($scope, $http) {
 
   $scope.getPastUsers = function() {
     $http({url:'/getpastobj', method: "POST", data: JSON.stringify({coll:"users", query:{"gamesdet.scopa": {$exists:true}}})}).success(function(data) {    
+      $scope.getDatetime();
       $scope.lastDaysUsers = data.obj.lastDaysObj;
       $scope.lastMonthUsers = data.obj.lastMonthObj;
       $scope.overallUsers = data.obj.overallObj;
