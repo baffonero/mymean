@@ -18,14 +18,15 @@ setInterval(function(){
 
 		console.log("RES",stat);
 		//server stats
-		$("#uptime").html(formatTimespan(stat.server.uptime*1000));
-		loadavg.push(Math.round(stat.server.loadavg[0]*100));
-		if(loadavg.length>160){
-			loadavg.splice(0,1);
+		if (stat.server.uptime) {
+			$("#uptime").html(formatTimespan(stat.server.uptime*1000));
+			loadavg.push(Math.round(stat.server.loadavg[0]*100));
+			if(loadavg.length>160){
+				loadavg.splice(0,1);
+			}
+			$("#loadavg").sparkline(loadavg,{type: 'line',normalRangeMin:0,normalRangeMax:300, barColor:"green",chartRangeMin:0,chartRangeMax:1000,width:"250px",height:"30px"});
+			$("#memory").sparkline([stat.server.totalmem-stat.server.freemem,stat.server.freemem],{type: 'pie',sliceColors:['red','green'],width:"50px",height:"50px"});
 		}
-		$("#loadavg").sparkline(loadavg,{type: 'line',normalRangeMin:0,normalRangeMax:300, barColor:"green",chartRangeMin:0,chartRangeMax:1000,width:"250px",height:"30px"});
-		$("#memory").sparkline([stat.server.totalmem-stat.server.freemem,stat.server.freemem],{type: 'pie',sliceColors:['red','green'],width:"50px",height:"50px"});
-		
 		/*var cpus = [];
 		$.each(stat.server.cpus,function(index,cpu){
 			if(prevcpus[index]) {
