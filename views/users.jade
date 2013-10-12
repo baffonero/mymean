@@ -2,6 +2,7 @@ extends layout
  
 block head
   script(type='text/javascript', src='/javascripts/controllers.js')
+  script(type='text/javascript', src='/javascripts/monitor.js')
 
 block content 
 
@@ -10,17 +11,116 @@ block content
         li(class="active")
           a(href="#home" data-toggle="tab") Home 
         li 
-          a(href="#partite" data-toggle="tab") Partite
-        li 
-          a(href="#altro" data-toggle="tab") Altro
+          a(href="#details" data-toggle="tab") Dettagli
 
       div(class="tab-content")
-        #home(class=["tab-pane","active"])
+
+        #home(class="tab-pane","active") 
+                h3
+                  | Server Stats -
+                  button.btnConnect RECONNECT
+                table(border='0')
+                  tr
+                    td
+                      strong Server uptime:
+                    td
+                      #uptime Loading...
+                    td
+                      strong Server Memory:
+                    td
+                      #memory Loading...
+                  tr
+                    td
+                      strong Server OS Load AVG:
+                    td(colspan='3')
+                      #loadavg(style='background: gray;') Loading...
+                  tr
+                    td
+                      strong Node CPUs Load:
+                    td(colspan='3')
+                      #cpusload(style='float: left; padding: 0 10px;') Loading...
+                h3
+                  | Game Stats (version:
+                  span#appversion Loading...
+                  | )
+                table(border='0')
+                  tr
+                    td
+                      strong Game uptime:
+                    td
+                      #gameuptime Loading...
+                    td(width='20')
+                    td
+                      strong Game restarts:
+                    td
+                      #gamerestarts Loading...
+                  tr
+                    td
+                      strong onlinePlayersQ:
+                    td
+                      #onlinePlayersQ Loading...
+                    td
+                    td
+                      strong Random players:
+                    td
+                      #randomPlayers Loading...
+                  tr
+                    td
+                      strong Users Online:
+                    td
+                      #usersOnline Loading...
+                    td
+                    td
+                      strong Players playing now:
+                    td
+                      #playersPlaying Loading...
+                  tr
+                    td  
+                    td
+                    td
+                  tr
+                    td
+                      strong Today Users:
+                    td
+                      #dayusers Loading...
+                    td(width='20')
+                    td
+                      strong Today Games:
+                    td
+                      #daygames Loading...
+                  tr
+                    td
+                      strong Month Users:
+                    td
+                      #monthusers Loading...
+                    td
+                    td
+                      strong Month Games:
+                    td
+                      #monthgames Loading...
+                  tr
+                    td
+                      strong Total Users:
+                    td
+                      #totusers Loading...
+                    td
+                    td
+                      strong Total Games:
+                    td
+                      #totgames Loading...
+                br
+                div
+                  | Last update:
+                  span#lastUpdate
+                div(style='display: none;')
+                  | server:
+                  span#server        
+        #details(class=["tab-pane"])
         
           div.row 
             div.container(class="col-md-4" ng-controller="UserController", ng-init="getPastUsers()")
                 h2 Nuovi Utenti
-                table(class=["table", "table-striped", "table-hover", "table-condensed", "table-responsive"])
+                table(class=["table", "table-condensed", "table-responsive"])
                   tbody
                     th.row
                         td Data
@@ -44,7 +144,7 @@ block content
                         td{{overallUser.instant}}        
             div.container(class="col-md-4" ng-controller="UserController", ng-init="getPastGames()")
                 h2 Partite
-                table(class=["table", "table-striped", "table-hover", "table-condensed", "table-responsive"])
+                table(class=["table", "table-condensed", "table-responsive"])
                   tbody
                     th.row
                         td Data
@@ -65,8 +165,8 @@ block content
                     tr.row(ng-repeat="overallGame in overallGames")
                         td Di Sempre
                         td{{overallGame.tot}} 
-                        td{{overallGame.instant}}  
-        #partite(class="tab-pane")                          
-        #altro(class="tab-pane") 
+                        td{{overallGame.instant}}          
+
+
 
   

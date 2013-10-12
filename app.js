@@ -1,8 +1,8 @@
-var express = require('express')
+var express = require('express.io')
   , util = require('util')
   , FacebookStrategy = require('passport-facebook').Strategy
   , http = require('http')
-  , db = require('./modules/db-manager')
+  , DB = require('./modules/db-manager')
   , routes = require('./routes')
   , passport = require('passport')
   , config  = require('./config.js')
@@ -10,7 +10,7 @@ var express = require('express')
 
   var app = express();
 
-  var admins = new AdminsDAO(db);
+  var admins = new AdminsDAO(DB.mongo);
 
   passport.serializeUser(function(user, done) {
     done(null, user);
@@ -82,8 +82,18 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+app.http().io();
+
+app.listen(app.get('port'), function(){
+  console.log('Express server listening on port ' + app.get('port'));
+});
+//http.createServer(app).listen(app.get('port'), function(){
+//  console.log('Express server listening on port ' + app.get('port'));
+//});
+
+
 // Application routes
-routes(app, db, passport);
+routes(app, DB, passport);
 
 
 
@@ -93,6 +103,34 @@ routes(app, db, passport);
 //   login page.  Otherwise, the primary route function function will be called,
 //   which, in this example, will redirect the user to the home page.
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
-});
+
+
+
+/*var io = require('socket.io').listen(app)
+// SOCKET SERVER
+
+var statsTimer;
+
+var monitoring = io
+  .of('/monitoring')
+  .on('connection', function (socket) {
+
+    if(statsTimer) {
+        clearInterval(statsTimer);
+    }
+
+    socket.on('getstats', function(data,fn) {
+        if(fn) {
+          fn(buildStats());
+        }
+
+    });
+
+    socket.on('disconnect', function() {
+        //clearInterval(statsTimer);
+    });
+
+});*/
+
+
+

@@ -15,9 +15,13 @@ module.exports = exports = function(app, db, passport) {
     app.post('/getpastobj', authHandler.ensureAuthenticated, contentHandler.getPastObj);
     app.post('/gettodayobj', authHandler.ensureAuthenticated, contentHandler.getTodayObj);
 
-//    app.get('/getpastobj', authHandler.ensureAuthenticated, contentHandler.getPastObj);
-//    app.get('/gettodayobj', authHandler.ensureAuthenticated, contentHandler.getTodayObj);
-    
+    app.io.route('getstats', contentHandler.getStats);
+
+//    app.io.route('getstats', function(data,fn) {
+//    if(statsTimer) {
+//        clearInterval(statsTimer);
+//    }
+
     // Error handling middleware
     app.use(ErrorHandler);
 }

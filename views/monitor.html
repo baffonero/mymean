@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  <meta charset="utf-8">
+    <title>Scopa Dal Negro Monitor Panel</title>
+
+    <link rel="stylesheet" href="/css/monitor.css" type="text/css" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="/js/io/socket.io.min.js"></script>
+    <script src="/js/jquery/jquery-1.7.2.min.js"></script>
+    <script src="/js/jquery/sparkline/jquery.sparkline.min.js"></script>
+
+    <script src="/js/monitor.js"></script>
+
+</head>
+<body>
+    <h3>Server Stats - <button class="btnConnect">RECONNECT</button></h3>
+    <table border="0">
+        <tr>
+            <td><strong>Server uptime:</strong></td>
+            <td><div id="uptime">Loading...</div></td>
+            <td><strong>Server Memory:</strong></td>
+            <td><div id="memory">Loading...</div></td>
+        </tr>
+        <tr>
+            <td><strong>Server OS Load AVG:</strong></td>
+            <td colspan=3><div id="loadavg" style="background:gray;">Loading...</div></td>
+        </tr>
+        <tr>
+            <td><strong>Node CPUs Load:</strong></td>
+            <td colspan=3><div id="cpusload" style="float:left;padding:0 10px;">Loading...</div></td>
+        </tr>
+    </table>
+    <h3>Game Stats (version: <span id="appversion">Loading...</span>)</h3>
+    <table border="0">
+        <tr>
+            <td><strong>Game uptime:</strong></td>
+            <td><div id="gameuptime">Loading...</div></td>
+            <td width="20"></td>
+            <td><strong>Game restarts:</strong></td>
+            <td><div id="gamerestarts">Loading...</div></td>
+        </tr>
+        <tr>
+            <td><strong>onlinePlayersQ:</strong></td>
+            <td><div id="onlinePlayersQ">Loading...</div></td>
+            <td></td>
+            <td><strong>Random players:</strong></td>
+            <td><div id="randomPlayers">Loading...</div></td>
+        </tr>
+        <tr>
+            <td><strong>Users Online:</strong></td>
+            <td><div id="usersOnline">Loading...</div></td>
+            <td></td>
+            <td><strong>Players playing now:</strong></td>
+            <td><div id="playersPlaying">Loading...</div></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><strong>Today Users:</strong></td>
+            <td><div id="dayusers">Loading...</div></td>
+            <td width="20"></td>
+            <td><strong>Today Games:</strong></td>
+            <td><div id="daygames">Loading...</div></td>
+        </tr>
+        <tr>
+            <td><strong>Month Users:</strong></td>
+            <td><div id="monthusers">Loading...</div></td>
+            <td></td>
+            <td><strong>Month Games:</strong></td>
+            <td><div id="monthgames">Loading...</div></td>
+        </tr>
+        <tr>
+            <td><strong>Total Users:</strong></td>
+            <td><div id="totusers">Loading...</div></td>
+            <td></td>
+            <td><strong>Total Games:</strong></td>
+            <td><div id="totgames">Loading...</div></td>
+        </tr>
+    </table>
+    <br>
+    <div>Last update: <span id="lastUpdate"></span></div>
+    <div style="display:none;">server: <span id="server"></span></div>
+</body>
+</html>
