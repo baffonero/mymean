@@ -70,7 +70,7 @@ setInterval(function(){
 		$("#server").html(JSON.stringify(stat.server));
 
 	});
-},1000);
+},100000);
 
 });
 

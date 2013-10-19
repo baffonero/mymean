@@ -59,7 +59,7 @@ var express = require('express.io')
   app.use(express.cookieParser());
   app.use(express.bodyParser());
   app.use(express.methodOverride());
-  app.use(express.session({ cookie: { maxAge: 60000 }, secret: 'keyboard cat' }));
+  app.use(express.session({ cookie: { maxAge: 60000*60*24*7}, secret: 'keyboard cat' }));
   // Initialize Passport!  Also use passport.session() middleware, to support
   // persistent login sessions (recommended).
   app.use(passport.initialize());

@@ -13,12 +13,12 @@ function ContentHandler (db) {
 
     this.displayMainPage = function(req, res, next) {
         "use strict";
-
-        return res.render('index', {
-            title: 'Profilo',
-            user : req.user
+        models.getObjs("games", {}, function(err, obj) {
+          return res.render('index', {
+              title: 'Monitor',
+              games : obj
+          });          
         });
-
     }
 
     this.displayLoginPage = function(req, res, next) {
@@ -37,10 +37,13 @@ function ContentHandler (db) {
         });
 
     }
+ 
 
     this.getPastObj= function(req, res, next) {
         models.getPastObj(req.body.coll, req.body.query, function(err, obj) {
-          //console.log("1", req.body.coll, obj);
+          if (err) {
+            return {};
+          }
           return res.json({ obj : obj });
         });
 
@@ -49,13 +52,24 @@ function ContentHandler (db) {
     this.getTodayObj= function(req, res, next) {
 
         models.getTodayObj(req.body.coll, req.body.query, function(err, obj) {
-          //console.log("2", req.body.coll, obj);
+          if (err) {
+            return {};
+          }          
           return res.json({ obj : obj });
         });
 
     }  
 
+    this.getObjs= function(req, res, next) {
+
+        models.getObjs(req.body.coll, req.body.query, function(err, obj) {
+          return res.json({ obj : obj });
+        });
+
+    }     
+
     this.getStats = function(req, res, next) {
+        var game = req.data.game;
 
         updateStats(function(lastStats, serverStats) {
             var time = (new Date()).getTime();
@@ -85,13 +99,13 @@ function ContentHandler (db) {
             .get("counters.onlinePlayersQ")
             .get("counters.usersOnline")
             .get("counters.restarts")
-            .get("scopa.totusers")
-            .get("scopa.totgames")
-            .get("scopa.monthusers")
-            .get("scopa.monthgames")
-            .get("scopa.dayusers")
-            .get("scopa.daygames")
-            .get("scopa.app.version")
+            .get(game+".totusers")
+            .get(game+".totgames")
+            .get(game+".monthusers")
+            .get(game+".monthgames")
+            .get(game+".dayusers")
+            .get(game+".daygames")
+            .get(game+".app.version")
             .get("server.uptime")
             .get("server.loadavg")
             .get("server.totalmem")

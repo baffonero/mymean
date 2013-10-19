@@ -1,13 +1,167 @@
 extends layout
-
+ 
 block head
-  link(rel='stylesheet', href='/javascripts/vendor/bootstrap-css/css/bootstrap.css')
+  script(type='text/javascript', src='/javascripts/controllers.js')
 
-  script(type='text/javascript', src='/javascripts/controllers/UserController.js')
-
-block content
-  div.container(ng-controller="UserController", ng-init="setUser(#{JSON.stringify(user)})")
-    h1 My Profile
+block content 
+  div(ng-controller="GamesController", ng-init="setGames( #{JSON.stringify(games)} )")
+    tabset
+      tab(ng-repeat="game in games" heading="{{game.name}}" select="setPrefix(game.prefix)")
     div
-      ul 
-        li {{user.name}}
+      tabset 
+        tab(heading="Game Data" select="getPastData()")
+          div.row 
+            div.container(class="col-md-4")
+                h4 Nuovi Utenti
+                table(class=["table", "table-condensed", "table-responsive"])
+                  tbody
+                    th.row
+                        td Data
+                        td Utenti
+                        td Alle {{datetime}}
+                    tr.row
+                        td OGGI
+                        td{{todayUsers}} 
+                        td{{todayUsers}}                         
+                    tr.row(ng-repeat="lastDaysUser in lastDaysUsers")
+                        td{{lastDaysUser._id.giorno}}/{{lastDaysUser._id.mese}}/{{lastDaysUser._id.anno}}
+                        td{{lastDaysUser.tot}} 
+                        td{{lastDaysUser.instant}} 
+                    tr.row(ng-repeat="lastMonthUser in lastMonthUsers")
+                        td Ultimi 30 giorni
+                        td{{lastMonthUser.tot}} 
+                        td{{lastMonthUser.instant}} 
+                    tr.row(ng-repeat="overallUser in overallUsers")
+                        td Di Sempre
+                        td{{overallUser.tot}} 
+                        td{{overallUser.instant}}        
+            div.container(class="col-md-4")
+                h4 Partite
+                table(class=["table", "table-condensed", "table-responsive"])
+                  tbody
+                    th.row
+                        td Data
+                        td Partite
+                        td Alle {{datetime}}
+                    tr.row
+                        td OGGI
+                        td{{todayGames}} 
+                        td{{todayGames}}                         
+                    tr.row(ng-repeat="lastDaysGame in lastDaysGames")
+                        td{{lastDaysGame._id.giorno}}/{{lastDaysGame._id.mese}}/{{lastDaysGame._id.anno}}
+                        td{{lastDaysGame.tot}} 
+                        td{{lastDaysGame.instant}} 
+                    tr.row(ng-repeat="lastMonthGame in lastMonthGames")
+                        td Ultimi 30 giorni
+                        td{{lastMonthGame.tot}} 
+                        td{{lastMonthGame.instant}} 
+                    tr.row(ng-repeat="overallGame in overallGames")
+                        td Di Sempre
+                        td{{overallGame.tot}} 
+                        td{{overallGame.instant}}   
+        tab(heading="Server" select="getServerInfo()" class=["col-md-4","col-ld-4"])
+                h4
+                  | Server Stats -
+                  button.btnConnect RECONNECT
+                table(border='0')
+                  tr
+                    td
+                      strong Server uptime:
+                    td
+                      #uptime Loading...
+                    td
+                      strong Server Memory:
+                    td
+                      #memory Loading...
+                  tr
+                    td
+                      strong Server OS Load AVG:
+                    td(colspan='3')
+                      #loadavg(style='background: gray;') Loading...
+                  tr
+                    td
+                      strong Node CPUs Load:
+                    td(colspan='3')
+                      #cpusload(style='float: left; padding: 0 10px;') Loading...
+                h4
+                  | Game Stats (version:
+                  span#appversion Loading...
+                  | )
+                table(border='0')
+                  tr
+                    td
+                      strong Game uptime:
+                    td
+                      #gameuptime Loading...
+                    td(width='20')
+                    td
+                      strong Game restarts:
+                    td
+                      #gamerestarts Loading...
+                  tr
+                    td
+                      strong onlinePlayersQ:
+                    td
+                      #onlinePlayersQ Loading...
+                    td
+                    td
+                      strong Random players:
+                    td
+                      #randomPlayers Loading...
+                  tr
+                    td
+                      strong Users Online:
+                    td
+                      #usersOnline Loading...
+                    td
+                    td
+                      strong Players playing now:
+                    td
+                      #playersPlaying Loading...
+                  tr
+                    td  
+                    td
+                    td
+                  tr
+                    td
+                      strong Today Users:
+                    td
+                      #dayusers Loading...
+                    td(width='20')
+                    td
+                      strong Today Games:
+                    td
+                      #daygames Loading...
+                  tr
+                    td
+                      strong Month Users:
+                    td
+                      #monthusers Loading...
+                    td
+                    td
+                      strong Month Games:
+                    td
+                      #monthgames Loading...
+                  tr
+                    td
+                      strong Total Users:
+                    td
+                      #totusers Loading...
+                    td
+                    td
+                      strong Total Games:
+                    td
+                      #totgames Loading...
+                br
+                div
+                  | Last update:
+                  span#lastUpdate
+                div(style='display: none;')
+                  | server:
+                  span#server        
+
+//  div(id="main" ng-controller="GamesController", ng-init="getGames()")
+//    nav(class="{active:$first}")
+//      a(href="#" class="home" ng-click="gamesel={{game.prefix}}" ng-repeat="game in games") {{game.name}}
+//        span(ng-hide="gamesel") Click to load
+//        span(ng-show="gamesel") Loaded item {{gamesel}}

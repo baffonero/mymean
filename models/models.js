@@ -25,6 +25,16 @@ function ModelsDAO(db) {
     var off = new Date().getTimezoneOffset();
     off = Math.abs(off)*60*1000;
     
+   this.getObjs = function(coll, query, callback) {
+        "use strict";
+
+        var match = query||{};
+        var resObj = {}; 
+        cmodel(coll).find(match,function(err, results){
+            resObj = results;
+            return callback(err, resObj);
+        });                
+    }   
 
    this.getTodayObj = function(coll, query, callback) {
         "use strict";
@@ -51,11 +61,18 @@ function ModelsDAO(db) {
 
         var that = this;
         that.getLastDaysObj(coll, numlastDays,query, function(err, results){
-            resObj.lastDaysObj = results;
+
+            resObj.lastDaysObj = results||{};
             that.getAverageObj(coll, numlastMonth,query, function(err, results){
-                resObj.lastMonthObj = results;
+                if (err) {
+                    return callback(err, null);
+                }
+                resObj.lastMonthObj = results||{};
                 that.getAverageObj(coll, null,query, function(err, results){
-                    resObj.overallObj = results;
+                    if (err) {
+                        return callback(err, null);
+                    }                    
+                    resObj.overallObj = results||{};
                     return callback(err, resObj);
                 });                
             });
@@ -84,7 +101,6 @@ function ModelsDAO(db) {
         var match = query||{};
         match.created = {$gt: startDate,$lt: endDate};
 
-         console.log("numDay", numDay,"numGG",numGG, "match",match);
         cmodel(coll).aggregate(
             {$match: match  },
         {$project:
@@ -100,34 +116,16 @@ function ModelsDAO(db) {
             },
         function(err, results) {
             if (!err) {
-                results[0].tot = Math.round(results[0].tot/numGG);
-                results[0].instant = Math.round(results[0].instant/numGG);
+                if (results.size>0) {
+                    results[0].tot = Math.round(results[0].tot/numGG);
+                    results[0].instant = Math.round(results[0].instant/numGG);
+                }
                 return callback(null, results);
             }
 
             return callback(err, null);
         });
 
-        /*cmodel(coll).aggregate(
-            {$match: match  }, 
-            {$project:
-                {created:1,                 
-                 instant: {$cond:[{$lte: [{ $add: [{ $multiply: [ { $hour: '$created' }, 60 ] }, { $minute: '$created' } ] }, endMinute]},1,0]}
-                }
-            },
-            { $group : 
-                { _id : "AVERAGE", tot:{$sum:1}, instant:{$sum:"$instant"} 
-                } 
-            },
-        function(err, results) {
-            if (!err) {
-                results[0].tot = Math.round(results[0].tot/numGG);
-                results[0].instant = Math.round(results[0].instant/numGG);
-                return callback(null, results);
-            }
-
-            return callback(err, null);
-        });*/
     }
 
    this.getLastDaysObj = function(coll, numDay, query, callback) {
@@ -149,25 +147,6 @@ function ModelsDAO(db) {
 
         //console.log("match", match);
 
-        /*cmodel(coll).aggregate(
-            {$match: match  }, 
-            {$project:
-                {created:1,                 
-                 instant: {$cond:[{$lte: [{ $add: [{ $multiply: [ { $hour: '$created' }, 60 ] }, { $minute: '$created' } ] }, endMinute]},1,0]}
-                }
-            },
-            { $group : 
-                { _id : {giorno: {$dayOfMonth:"$created"}, mese: {$month:"$created"}, anno: {$year:"$created"}}, tot:{$sum:1}, instant:{$sum:"$instant"} 
-                } 
-            },             
-            {$sort: {"_id.anno":-1,"_id.mese":-1,"_id.giorno":-1} },
-        function(err, results) {
-            if (!err) {
-                return callback(null, results);
-            }
-
-            return callback(err, null);
-        });*/
         cmodel(coll).aggregate(
             {$match: match  },
             {$project:
