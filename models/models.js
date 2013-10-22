@@ -119,11 +119,12 @@ function ModelsDAO(db) {
                 if (results.size>0) {
                     results[0].tot = Math.round(results[0].tot/numGG);
                     results[0].instant = Math.round(results[0].instant/numGG);
+                    return callback(null, results);
+                } else {
+                    return callback(null, null);
                 }
-                return callback(null, results);
-            }
-
-            return callback(err, null);
+                
+            } else {return callback(null, null);}
         });
 
     }
