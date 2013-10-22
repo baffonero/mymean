@@ -116,7 +116,7 @@ function ModelsDAO(db) {
             },
         function(err, results) {
             if (!err) {
-                if (results.size>0) {
+                if (results[0]) {
                     results[0].tot = Math.round(results[0].tot/numGG);
                     results[0].instant = Math.round(results[0].instant/numGG);
                     return callback(null, results);
