@@ -101,10 +101,13 @@ function ContentHandler (db) {
             .get("counters.restarts")
             .get(game+".totusers")
             .get(game+".totgames")
+            .get(game+".totchatmsgs")
             .get(game+".monthusers")
             .get(game+".monthgames")
+            .get(game+".monthchatmsgs")
             .get(game+".dayusers")
             .get(game+".daygames")
+            .get(game+".daychatmsgs")
             .get(game+".app.version")
             .get("server.uptime")
             .get("server.loadavg")
@@ -122,16 +125,19 @@ function ContentHandler (db) {
               lastStats.restarts = res[7];
               lastStats.totusers = res[8];
               lastStats.totgames = res[9];
-              lastStats.monthusers = res[10];
-              lastStats.monthgames = res[11];
-              lastStats.dayusers = res[12];
-              lastStats.daygames = res[13];
-              lastStats.appversion = res[14];
-              serverStats.uptime = res[15];
-              serverStats.loadavg = res[16];
-              serverStats.totalmem = res[17];
-              serverStats.freemem = res[18];
-              serverStats.cpus = res[19];
+              lastStats.totchatmsgs = res[10];
+              lastStats.monthusers = res[11];
+              lastStats.monthgames = res[12];
+              lastStats.monthchatmsgs = res[13];
+              lastStats.dayusers = res[14];
+              lastStats.daygames = res[15];
+              lastStats.daychatmsgs = res[16];
+              lastStats.appversion = res[17];
+              serverStats.uptime = res[18];
+              serverStats.loadavg = res[19];
+              serverStats.totalmem = res[20];
+              serverStats.freemem = res[21];
+              serverStats.cpus = res[22];
               if(callback){
                 callback(lastStats, serverStats);
               }

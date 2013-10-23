@@ -110,10 +110,13 @@ function GamesController($scope, $http) {
         $("#gamerestarts").html(stat.stats.restarts);
         $("#dayusers").html(stat.stats.dayusers);
         $("#daygames").html(stat.stats.daygames);
+        $("#daychatmsgs").html(stat.stats.daychatmsgs);
         $("#monthusers").html(stat.stats.monthusers);
         $("#monthgames").html(stat.stats.monthgames);
+        $("#monthchatmsgs").html(stat.stats.monthchatmsgs);
         $("#totusers").html(stat.stats.totusers);
         $("#totgames").html(stat.stats.totgames);
+        $("#totchatmsgs").html(stat.stats.totchatmsgs);
 
         var time = new Date(stat.time);
         $("#lastUpdate").text(time.getHours()+":"+time.getMinutes()+":"+time.getSeconds());
