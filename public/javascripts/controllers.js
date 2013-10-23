@@ -111,12 +111,15 @@ function GamesController($scope, $http) {
         $("#dayusers").html(stat.stats.dayusers);
         $("#daygames").html(stat.stats.daygames);
         $("#daychatmsgs").html(stat.stats.daychatmsgs);
+        $("#daystarted").html(stat.stats.daystarted);
         $("#monthusers").html(stat.stats.monthusers);
         $("#monthgames").html(stat.stats.monthgames);
         $("#monthchatmsgs").html(stat.stats.monthchatmsgs);
+        $("#monthstarted").html(stat.stats.monthstarted);
         $("#totusers").html(stat.stats.totusers);
         $("#totgames").html(stat.stats.totgames);
         $("#totchatmsgs").html(stat.stats.totchatmsgs);
+        $("#totstarted").html(stat.stats.totstarted);
 
         var time = new Date(stat.time);
         $("#lastUpdate").text(time.getHours()+":"+time.getMinutes()+":"+time.getSeconds());

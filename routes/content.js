@@ -114,6 +114,9 @@ function ContentHandler (db) {
             .get("server.totalmem")
             .get("server.freemem")
             .get("server.cpus")
+            .get(game+".totstarted")
+            .get(game+".monthstarted")
+            .get(game+".daystarted")
             .exec(function(err,res){
               lastStats.lastStartTime = res[0];
               lastStats.boards = res[1];
@@ -138,6 +141,9 @@ function ContentHandler (db) {
               serverStats.totalmem = res[20];
               serverStats.freemem = res[21];
               serverStats.cpus = res[22];
+              lastStats.totstarted = res[23];
+              lastStats.monthstarted = res[24];
+              lastStats.daystarted = res[25];
               if(callback){
                 callback(lastStats, serverStats);
               }
