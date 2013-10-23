@@ -118,6 +118,7 @@ block content
                     td
                     td
                     td
+            div.container(class="col-md-4")          
                 table(class=["table", "table-condensed", "table-responsive"])
                   th.row
                     td Day
@@ -125,41 +126,50 @@ block content
                     td Total
                     td #                      
                   tr.row
-                    td
-                      #dayusers Loading...
-                    td
-                      #monthusers Loading...
-                    td
+                    td 
+                       #dayusers Loading...
+                    td 
+                       #monthusers Loading...
+                    td 
                       #totusers Loading...
                     td
                       strong Users
                   tr.row
-                    td
-                      #daygames Loading...
-                    td
-                      #monthgames Loading...
-                    td
-                      #totgames Loading...
+                    td 
+                       #daygames Loading...
+                    td 
+                       #monthgames Loading...
+                    td 
+                       #totgames Loading...
                     td
                       strong Games
                   tr.row
-                    td
-                      #daychatmsgs Loading...
-                    td
-                      #monthchatmsgs Loading...
-                    td
-                      #totchatmsgs Loading...
+                    td 
+                       #daychatmsgs Loading...
+                    td 
+                       #monthchatmsgs Loading...
+                    td 
+                       #totchatmsgs Loading...
                     td
                       strong Chat Msgs
                   tr.row
-                    td
-                      #daystarted Loading...
-                    td
-                      #monthstarted Loading...
-                    td
-                      #totstarted Loading...
+                    td 
+                       #daystarted Loading...
+                    td 
+                       #monthstarted Loading...
+                    td 
+                       #totstarted Loading...
                     td
                       strong Multi-Games Started
+                  tr.row
+                    td 
+                       #daymultigames Loading...
+                    td 
+                       #monthmultigames Loading...
+                    td 
+                       #totmultigames Loading...
+                    td
+                      strong Multi-Games Finished                      
                 br
                 div
                   | Last update:
@@ -167,9 +177,3 @@ block content
                 div(style='display: none;')
                   | server:
                   span#server        
-
-//  div(id="main" ng-controller="GamesController", ng-init="getGames()")
-//    nav(class="{active:$first}")
-//      a(href="#" class="home" ng-click="gamesel={{game.prefix}}" ng-repeat="game in games") {{game.name}}
-//        span(ng-hide="gamesel") Click to load
-//        span(ng-show="gamesel") Loaded item {{gamesel}}

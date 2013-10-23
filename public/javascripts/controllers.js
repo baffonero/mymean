@@ -45,7 +45,8 @@ function GamesController($scope, $http) {
 
   $scope.getTodayGames = function(gamePrefix) {
     var collObj = {};
-    collObj.coll = gamePrefix+".scores";       
+    collObj.coll = gamePrefix+".scores"; 
+    collObj.query = {$or:[{won:1}, {guidopp:null}]};      
     $http({url:'/gettodayobj', method: "POST", data: JSON.stringify(collObj)}).success(function(data) {
       $scope.todayGames = data.obj.todayObj;
   
@@ -60,7 +61,8 @@ function GamesController($scope, $http) {
 
   $scope.getPastGames = function(gamePrefix) {
     var collObj = {};
-    collObj.coll = gamePrefix+".scores";    
+    collObj.coll = gamePrefix+".scores";   
+    collObj.query = {$or:[{won:1}, {guidopp:null}]};    
     $http({url:'/getpastobj', method: "POST", data: JSON.stringify(collObj)}).success(function(data) {
       $scope.lastDaysGames = data.obj.lastDaysObj;
       $scope.lastMonthGames = data.obj.lastMonthObj;
@@ -112,14 +114,17 @@ function GamesController($scope, $http) {
         $("#daygames").html(stat.stats.daygames);
         $("#daychatmsgs").html(stat.stats.daychatmsgs);
         $("#daystarted").html(stat.stats.daystarted);
+        $("#daymultigames").html(stat.stats.daymultigames);
         $("#monthusers").html(stat.stats.monthusers);
         $("#monthgames").html(stat.stats.monthgames);
         $("#monthchatmsgs").html(stat.stats.monthchatmsgs);
         $("#monthstarted").html(stat.stats.monthstarted);
+        $("#monthmultigames").html(stat.stats.monthmultigames);
         $("#totusers").html(stat.stats.totusers);
         $("#totgames").html(stat.stats.totgames);
         $("#totchatmsgs").html(stat.stats.totchatmsgs);
         $("#totstarted").html(stat.stats.totstarted);
+        $("#totmultigames").html(stat.stats.totmultigames);
 
         var time = new Date(stat.time);
         $("#lastUpdate").text(time.getHours()+":"+time.getMinutes()+":"+time.getSeconds());
