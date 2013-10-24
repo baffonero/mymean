@@ -10,6 +10,10 @@ a {
 tr.active {
   background-color:#5597b4;
 }
+
+.gamestats {
+  margin:30px auto auto;
+}
 /*-------------------------
 	The menu
 --------------------------*/
