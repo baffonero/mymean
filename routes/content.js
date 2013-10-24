@@ -119,7 +119,10 @@ function ContentHandler (db) {
             .get(game+".daystarted")
             .get(game+".totmultigames")
             .get(game+".monthmultigames")
-            .get(game+".daymultigames")            
+            .get(game+".daymultigames")      
+            .get(game+".totbrokegames")
+            .get(game+".monthbrokegames")
+            .get(game+".daybrokegames")                   
             .exec(function(err,res){
               lastStats.lastStartTime = res[0];
               lastStats.boards = res[1];
@@ -149,7 +152,10 @@ function ContentHandler (db) {
               lastStats.daystarted = res[25];
               lastStats.totmultigames = res[26];
               lastStats.monthmultigames = res[27];
-              lastStats.daymultigames = res[28];              
+              lastStats.daymultigames = res[28];   
+              lastStats.totbrokegames = res[29];
+              lastStats.monthbrokegames = res[30];
+              lastStats.daybrokegames = res[31];                          
               if(callback){
                 callback(lastStats, serverStats);
               }
