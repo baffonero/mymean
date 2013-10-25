@@ -4368,3 +4368,87 @@
 [3038] 18 Oct 18:52:02 * Saving the final RDB snapshot before exiting.
 [3038] 18 Oct 18:52:02 * DB saved on disk
 [3038] 18 Oct 18:52:02 # Redis is now ready to exit, bye bye...
+[14234] 25 Oct 14:07:47 # Warning: no config file specified, using the default config. In order to specify a config file use 'redis-server /path/to/redis.conf'
+[14234] 25 Oct 14:07:47 * Server started, Redis version 2.4.18
+[14234] 25 Oct 14:07:47 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[14234] 25 Oct 14:07:47 * DB loaded from disk: 0 seconds
+[14234] 25 Oct 14:07:47 * The server is now ready to accept connections on port 6379
+[14234] 25 Oct 14:07:48 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14234] 25 Oct 14:07:48 - 0 clients connected (0 slaves), 821688 bytes in use
+[14239] 25 Oct 14:08:02 # Warning: no config file specified, using the default config. In order to specify a config file use 'redis-server /path/to/redis.conf'
+[14239] 25 Oct 14:08:02 * Server started, Redis version 2.4.18
+[14239] 25 Oct 14:08:02 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[14239] 25 Oct 14:08:02 * DB loaded from disk: 0 seconds
+[14239] 25 Oct 14:08:02 * The server is now ready to accept connections on port 6379
+[14239] 25 Oct 14:08:03 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:08:03 - 0 clients connected (0 slaves), 822152 bytes in use
+[14239] 25 Oct 14:08:08 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:08:08 - 0 clients connected (0 slaves), 822152 bytes in use
+[14239] 25 Oct 14:08:13 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:08:13 - 0 clients connected (0 slaves), 822152 bytes in use
+[14239] 25 Oct 14:08:15 - Accepted 127.0.0.1:41352
+[14239] 25 Oct 14:08:18 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:08:18 - 1 clients connected (0 slaves), 830720 bytes in use
+[14239] 25 Oct 14:08:23 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:08:23 - 1 clients connected (0 slaves), 830720 bytes in use
+[14239] 25 Oct 14:08:28 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:08:28 - 1 clients connected (0 slaves), 830768 bytes in use
+[14239] 25 Oct 14:08:33 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:08:33 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:08:38 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:08:38 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:08:43 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:08:43 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:08:48 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:08:48 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:08:53 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:08:53 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:08:58 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:08:58 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:09:03 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:09:03 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:09:08 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:09:08 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:09:13 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:09:13 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:09:18 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:09:18 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:09:23 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:09:23 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:09:28 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:09:28 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:09:33 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:09:33 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:09:38 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:09:38 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:09:43 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:09:43 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:09:48 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:09:48 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:09:53 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:09:53 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:09:58 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:09:58 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:10:03 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:10:03 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:10:08 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:10:08 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:10:13 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:10:13 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:10:18 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:10:18 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:10:23 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:10:23 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:10:28 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:10:28 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:10:33 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:10:33 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:10:38 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:10:38 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:10:43 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:10:43 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:10:48 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:10:48 - 1 clients connected (0 slaves), 832464 bytes in use
+[14239] 25 Oct 14:10:49 - Client closed connection
+[14239] 25 Oct 14:10:53 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[14239] 25 Oct 14:10:53 - 0 clients connected (0 slaves), 822152 bytes in use
