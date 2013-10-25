@@ -36,7 +36,7 @@ block content
                         td{{overallUser.tot}} 
                         td{{overallUser.instant}}        
                 button.btn.btn-warning(type='button' ng-click='getPastData()') Aggiorna
-            div.container(class="col-md-3")
+            div.container(class="col-md-4")
                 h4 Partite
                 table(class=["table", "table-condensed", "table-responsive"])
                   tbody
@@ -61,7 +61,7 @@ block content
                         td{{overallGame.tot}} 
                         td{{overallGame.instant}} 
         tab(heading="RealTime Data" select="getServerInfo()" class=["col-md-4","col-ld-4"])
-            div.container(class="col-md-4")
+            div.container(class=["col-md-4","col-xs-12"])
                 h4
                   button.btnConnect RECONNECT
                 table(border='0')
@@ -118,7 +118,7 @@ block content
                     td
                     td
                     td
-            div.container(class=["col-md-4","gamestats"])          
+            div.container(class=["col-md-4","col-xs-12","gamestats"])          
                 table(class=["table", "table-condensed", "table-responsive"])
                   th.row
                     td Day

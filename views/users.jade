@@ -6,7 +6,7 @@ block head
 
 block content 
 
-  div(class=["tabbable","col-xs-18"])
+  div(class=["tabbable","col-md-8","col-xs-12"])
       ul(class=["nav", "nav-tabs"])  
         li(class="active")
           a(href="#home" data-toggle="tab") Home 
@@ -16,7 +16,7 @@ block content
       div(class="tab-content")
 
         #home(class="tab-pane","active") 
-            div.container(class=["col-md-4","col-xs-9"]) 
+            div.container(class=["col-md-8","col-xs-12"]) 
                 h4
                   | Server Stats -
                   button.btnConnect RECONNECT
@@ -40,7 +40,7 @@ block content
                       strong Node CPUs Load:
                     td(colspan='3')
                       #cpusload(style='float: left; padding: 0 10px;') Loading...
-            div.container(class=["col-md-4","col-xs-12"]) 
+            div.container(class=["col-md-8","col-xs-12"]) 
                 h4
                   | Game Stats (version:
                   span#appversion Loading...
