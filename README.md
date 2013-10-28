@@ -20,20 +20,20 @@ Cosa cambia:
 
 3) Ci sono due folder:
 
-    a) Game Data
-        Contiene i dati di Nuovi Utenti giornalieri dell'ultima settimana e le medie degli ultimi 30 giorni e di sempre (non è in real-time, quindi dopo un paio di minuti vuoi vedere la situazione aggiornata premi su "Aggiorna")
+a) Game Data
+    Contiene i dati di Nuovi Utenti giornalieri dell'ultima settimana e le medie degli ultimi 30 giorni e di sempre (non è in real-time, quindi dopo un paio di minuti vuoi vedere la situazione aggiornata premi su "Aggiorna")
 
-    b) Real Time Data
+b) Real Time Data
 
-        Fondamentalmente è il vecchio monitor, con i dati Real-Time di gioco integrati:
+Fondamentalmente è il vecchio monitor, con i dati Real-Time di gioco integrati:
 
-        - New Users
-        - Total Games
-        - Multi.(Started): sono le partite in multiplayer cominciate
-        - Multi.(Completed): partite in qualche maniera "completate", quindi comprende anche "Multi.(Incompl. Win)"
-        - Multi.(Incompl. Win): è un "di cui" del precedente, indica le partite per le quali è stato assegnato un punteggio per abbandono (volontario o involontario) dell'avversario.   
-        - Chat Messages: Il numero di messaggi Chat...una nota di colore :-)
+- New Users
+- Total Games
+- Multi.(Started): sono le partite in multiplayer cominciate
+- Multi.(Completed): partite in qualche maniera "completate", quindi comprende anche "Multi.(Incompl. Win)"
+- Multi.(Incompl. Win): è un "di cui" del precedente, indica le partite per le quali è stato assegnato un punteggio per abbandono (volontario o involontario) dell'avversario.   
+- Chat Messages: Il numero di messaggi Chat...una nota di colore :-)
 
-        Per esempio al momento di questa immagine su 88 partite in multiplayer iniziate, 66 hanno avuto una qualche conclusione (di cui 16 per punteggio assegnato per abbandono). Le partite finite per bene diciamo sono 66 - 16 (50 quindi)
+Per esempio al momento di questa immagine su 88 partite in multiplayer iniziate, 66 hanno avuto una qualche conclusione (di cui 16 per punteggio assegnato per abbandono). Le partite finite per bene diciamo sono 66 - 16 (50 quindi)
 
-        ![monitor clip](https://www.clipular.com/c?6316518342131712=cXZXgOWzMaedBNQJS7sjOxq4C6o&f=.png)
+![monitor clip](https://www.clipular.com/c?6316518342131712=cXZXgOWzMaedBNQJS7sjOxq4C6o&f=.png)
