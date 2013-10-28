@@ -36,4 +36,4 @@ Fondamentalmente è il vecchio monitor, con i dati Real-Time di gioco integrati:
 
 Per esempio al momento di questa immagine su 88 partite in multiplayer iniziate, 66 hanno avuto una qualche conclusione (di cui 16 per punteggio assegnato per abbandono). Le partite finite per bene diciamo sono 66 - 16 (50 quindi)
 
-![https://www.clipular.com/c?6316518342131712=cXZXgOWzMaedBNQJS7sjOxq4C6o&f=.png]()
+![monitor clip](https://www.clipular.com/c?6316518342131712=cXZXgOWzMaedBNQJS7sjOxq4C6o&f=.png)
