@@ -87,8 +87,10 @@ function GamesController($scope, $http) {
     setInterval(function(){
 
       socket.emit('getstats', {game:$scope.gamePrefix});
+ 
+    },1000);
 
-      socket.on("stats",function(data){
+     socket.on("stats",function(data){
         var stat = data.stats; 
 
         //server stats
@@ -137,8 +139,6 @@ function GamesController($scope, $http) {
         $("#server").html(JSON.stringify(stat.server));
 
       });
-    },1000);
-
   };
 
 

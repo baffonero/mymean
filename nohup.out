@@ -20162,3 +20162,881 @@
 [3851] 30 Oct 17:17:37 - Client closed connection
 [3851] 30 Oct 17:17:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
 [3851] 30 Oct 17:17:40 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:17:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:17:45 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:17:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:17:50 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:17:55 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:17:55 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:18:00 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:18:00 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:18:05 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:18:05 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:18:10 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:18:10 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:18:15 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:18:15 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:18:20 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:18:20 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:18:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:18:25 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:18:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:18:30 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:18:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:18:35 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:18:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:18:40 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:18:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:18:45 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:18:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:18:50 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:18:55 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:18:55 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:19:00 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:19:00 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:19:05 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:19:05 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:19:10 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:19:10 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:19:15 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:19:15 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:19:20 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:19:20 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:19:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:19:25 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:19:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:19:30 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:19:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:19:35 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:19:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:19:40 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:19:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:19:45 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:19:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:19:50 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:19:55 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:19:55 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:20:00 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:20:00 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:20:05 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:20:05 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:20:10 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:20:10 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:20:15 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:20:15 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:20:20 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:20:20 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:20:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:20:25 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:20:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:20:30 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:20:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:20:35 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:20:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:20:40 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:20:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:20:45 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:20:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:20:50 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:20:55 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:20:55 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:21:00 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:21:00 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:21:05 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:21:05 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:21:10 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:21:10 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:21:15 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:21:15 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:21:20 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:21:20 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:21:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:21:25 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:21:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:21:30 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:21:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:21:35 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:21:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:21:40 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:21:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:21:45 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:21:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:21:50 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:21:55 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:21:55 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:22:00 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:22:00 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:22:05 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:22:05 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:22:10 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:22:10 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:22:15 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:22:15 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:22:20 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:22:20 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:22:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:22:25 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:22:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:22:30 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:22:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:22:35 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:22:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:22:40 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:22:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:22:45 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:22:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:22:50 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:22:55 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:22:55 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:23:00 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:23:00 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:23:05 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:23:05 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:23:10 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:23:10 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:23:15 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:23:15 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:23:20 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:23:20 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:23:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:23:25 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:23:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:23:30 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:23:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:23:35 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:23:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:23:40 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:23:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:23:45 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:23:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:23:50 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:23:55 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:23:55 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:24:00 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:24:00 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:24:05 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:24:05 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:24:10 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:24:10 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:24:15 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:24:15 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:24:20 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:24:20 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:24:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:24:25 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:24:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:24:30 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:24:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:24:35 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:24:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:24:40 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:24:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:24:45 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:24:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:24:50 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:24:55 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:24:55 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:25:00 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:25:00 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:25:05 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:25:05 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:25:10 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:25:10 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:25:15 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:25:15 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:25:20 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:25:20 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:25:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:25:25 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:25:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:25:30 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:25:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:25:35 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:25:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:25:40 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:25:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:25:45 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:25:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:25:50 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:25:55 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:25:55 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:26:00 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:26:00 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:26:05 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:26:05 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:26:10 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:26:10 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:26:15 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:26:15 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:26:20 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:26:20 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:26:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:26:25 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:26:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:26:30 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:26:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:26:35 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:26:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:26:40 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:26:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:26:45 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:26:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:26:50 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:26:55 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:26:55 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:27:00 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:27:00 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:27:05 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:27:05 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:27:10 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:27:10 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:27:15 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:27:15 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:27:20 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:27:20 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:27:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:27:25 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:27:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:27:30 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:27:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:27:35 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:27:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:27:40 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:27:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:27:45 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:27:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:27:50 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:27:55 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:27:55 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:28:00 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:28:00 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:28:05 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:28:05 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:28:10 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:28:10 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:28:15 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:28:15 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:28:20 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:28:20 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:28:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:28:25 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:28:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:28:30 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:28:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:28:35 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:28:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:28:40 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:28:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:28:45 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:28:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:28:50 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:28:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:28:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:29:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:29:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:29:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:29:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:29:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:29:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:29:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:29:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:29:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:29:21 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:29:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:29:26 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:29:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:29:31 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:29:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:29:36 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:29:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:29:41 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:29:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:29:46 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:29:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:29:51 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:29:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:29:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:30:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:30:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:30:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:30:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:30:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:30:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:30:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:30:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:30:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:30:21 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:30:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:30:26 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:30:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:30:31 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:30:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:30:36 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:30:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:30:41 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:30:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:30:46 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:30:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:30:51 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:30:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:30:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:31:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:31:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:31:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:31:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:31:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:31:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:31:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:31:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:31:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:31:21 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:31:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:31:26 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:31:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:31:31 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:31:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:31:36 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:31:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:31:41 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:31:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:31:46 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:31:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:31:51 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:31:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:31:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:32:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:32:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:32:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:32:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:32:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:32:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:32:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:32:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:32:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:32:21 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:32:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:32:26 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:32:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:32:31 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:32:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:32:36 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:32:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:32:41 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:32:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:32:46 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:32:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:32:51 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:32:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:32:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:33:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:33:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:33:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:33:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:33:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:33:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:33:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:33:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:33:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:33:21 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:33:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:33:26 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:33:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:33:31 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:33:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:33:36 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:33:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:33:41 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:33:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:33:46 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:33:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:33:51 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:33:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:33:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:34:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:34:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:34:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:34:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:34:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:34:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:34:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:34:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:34:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:34:21 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:34:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:34:26 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:34:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:34:31 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:34:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:34:36 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:34:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:34:41 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:34:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:34:46 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:34:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:34:51 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:34:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:34:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:35:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:35:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:35:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:35:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:35:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:35:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:35:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:35:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:35:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:35:21 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:35:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:35:26 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:35:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:35:31 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:35:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:35:36 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:35:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:35:41 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:35:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:35:46 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:35:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:35:51 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:35:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:35:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:36:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:36:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:36:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:36:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:36:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:36:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:36:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:36:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:36:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:36:21 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:36:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:36:26 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:36:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:36:31 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:36:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:36:36 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:36:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:36:41 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:36:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:36:46 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:36:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:36:51 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:36:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:36:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:37:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:37:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:37:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:37:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:37:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:37:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:37:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:37:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:37:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:37:21 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:37:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:37:26 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:37:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:37:31 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:37:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:37:36 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:37:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:37:41 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:37:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:37:46 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:37:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:37:51 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:37:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:37:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:38:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:38:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:38:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:38:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:38:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:38:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:38:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:38:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:38:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:38:21 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:38:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:38:26 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:38:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:38:31 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:38:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:38:36 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:38:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:38:41 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:38:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:38:46 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:38:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:38:51 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:38:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:38:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:39:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:39:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:39:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:39:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:39:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:39:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:39:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:39:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:39:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:39:21 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:39:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:39:26 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:39:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:39:31 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:39:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:39:36 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:39:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:39:41 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:39:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:39:46 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:39:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:39:51 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:39:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:39:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:40:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:40:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:40:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:40:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:40:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:40:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:40:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:40:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:40:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:40:21 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:40:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:40:26 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:40:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:40:31 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:40:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:40:36 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:40:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:40:41 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:40:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:40:46 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:40:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:40:51 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:40:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:40:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:41:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:41:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:41:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:41:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:41:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:41:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:41:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:41:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:41:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:41:21 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:41:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:41:26 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:41:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:41:31 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:41:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:41:36 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:41:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:41:41 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:41:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:41:46 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:41:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:41:51 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:41:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:41:56 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:42:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:42:01 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:42:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:42:06 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:42:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:42:11 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:42:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:42:16 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:42:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:42:22 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:42:27 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:42:27 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:42:32 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:42:32 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:42:37 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:42:37 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:42:42 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:42:42 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:42:47 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:42:47 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:42:52 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:42:52 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:42:57 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:42:57 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:43:02 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:43:02 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:43:07 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:43:07 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:43:12 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:43:12 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:43:17 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:43:17 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:43:22 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:43:22 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:43:27 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:43:27 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:43:32 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:43:32 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:43:37 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:43:37 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:43:42 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:43:42 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:43:47 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:43:47 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:43:52 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:43:52 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:43:57 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:43:57 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:44:02 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:44:02 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:44:07 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:44:07 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:44:12 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:44:12 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:44:17 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:44:17 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:44:22 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:44:22 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:44:27 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:44:27 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:44:32 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:44:32 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:44:37 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:44:37 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:44:42 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:44:42 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:44:47 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:44:47 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:44:52 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:44:52 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:44:57 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:44:57 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:45:02 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:45:02 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:45:07 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:45:07 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:45:12 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:45:12 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:45:17 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:45:17 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:45:22 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:45:22 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:45:27 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:45:27 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:45:32 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:45:32 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:45:37 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:45:37 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:45:42 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:45:42 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:45:47 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:45:47 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:45:52 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:45:52 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:45:57 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:45:57 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:46:02 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:46:02 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:46:07 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:46:07 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:46:12 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:46:12 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:46:17 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:46:17 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:46:22 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:46:22 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:46:27 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:46:27 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:46:32 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:46:32 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:46:37 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:46:37 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:46:42 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:46:42 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:46:47 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:46:47 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:46:52 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:46:52 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:46:57 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:46:57 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:47:02 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:47:02 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:47:07 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:47:07 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:47:12 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:47:12 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:47:17 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:47:17 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:47:22 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:47:22 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:47:27 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:47:27 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:47:32 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:47:32 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:47:37 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:47:37 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:47:42 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:47:42 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:47:47 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:47:47 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:47:52 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:47:52 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:47:57 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:47:57 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:48:02 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:48:02 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:48:07 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:48:07 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:48:12 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:48:12 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:48:17 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:48:17 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:48:22 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:48:22 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:48:27 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:48:27 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:48:32 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:48:32 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:48:37 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:48:37 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:48:42 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:48:42 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:48:47 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:48:47 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:48:52 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:48:52 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:48:57 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:48:57 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:49:02 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:49:02 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:49:07 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:49:07 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:49:12 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:49:12 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:49:17 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:49:17 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:49:22 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:49:22 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:49:27 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:49:27 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:49:32 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:49:32 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:49:37 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:49:37 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:49:42 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:49:42 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:49:47 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:49:47 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:49:52 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:49:52 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:49:57 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:49:57 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:50:02 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:50:02 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:50:07 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:50:07 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:50:12 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:50:12 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:50:17 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:50:17 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:50:22 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:50:22 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:50:27 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:50:27 - 0 clients connected (0 slaves), 822104 bytes in use
+[3851] 30 Oct 17:50:30 - Accepted 127.0.0.1:54623
+[3851] 30 Oct 17:50:32 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:50:32 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:50:37 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:50:37 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:50:42 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:50:42 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:50:47 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:50:47 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:50:52 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:50:52 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:50:57 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:50:57 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:51:02 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:51:02 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:51:07 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:51:07 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:51:12 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:51:12 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:51:17 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:51:17 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:51:22 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:51:22 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:51:27 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:51:27 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:51:32 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:51:32 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:51:37 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:51:37 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:51:42 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:51:42 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:51:47 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:51:47 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:51:52 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:51:52 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:51:57 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:51:57 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:52:02 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:52:02 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:52:07 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:52:07 - 1 clients connected (0 slaves), 830672 bytes in use
+[3851] 30 Oct 17:52:12 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:52:12 - 1 clients connected (0 slaves), 830720 bytes in use
+[3851] 30 Oct 17:52:17 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:52:17 - 1 clients connected (0 slaves), 830720 bytes in use
+[3851] 30 Oct 17:52:22 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:52:22 - 1 clients connected (0 slaves), 830720 bytes in use
+[3851] 30 Oct 17:52:27 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:52:27 - 1 clients connected (0 slaves), 830720 bytes in use
+[3851] 30 Oct 17:52:32 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:52:32 - 1 clients connected (0 slaves), 830720 bytes in use
+[3851] 30 Oct 17:52:33 * 100 changes in 300 seconds. Saving...
+[3851] 30 Oct 17:52:33 * Background saving started by pid 7736
+[7736] 30 Oct 17:52:33 * DB saved on disk
+[3851] 30 Oct 17:52:33 * Background saving terminated with success
+[3851] 30 Oct 17:52:37 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:52:37 - 1 clients connected (0 slaves), 830720 bytes in use
+[3851] 30 Oct 17:52:42 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:52:42 - 1 clients connected (0 slaves), 830720 bytes in use
+[3851] 30 Oct 17:52:47 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:52:47 - 1 clients connected (0 slaves), 830720 bytes in use
+[3851] 30 Oct 17:52:52 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:52:52 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:52:57 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:52:57 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:53:02 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:53:02 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:53:07 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:53:07 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:53:12 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:53:12 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:53:17 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:53:17 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:53:22 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:53:22 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:53:27 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:53:27 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:53:32 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:53:32 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:53:37 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:53:37 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:53:42 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:53:42 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:53:47 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:53:47 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:53:52 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:53:52 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:53:57 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:53:57 - 1 clients connected (0 slaves), 832416 bytes in use
+[3851] 30 Oct 17:54:02 - Client closed connection
+[3851] 30 Oct 17:54:02 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3851] 30 Oct 17:54:02 - 0 clients connected (0 slaves), 822104 bytes in use
