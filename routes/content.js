@@ -13,7 +13,7 @@ function ContentHandler (db) {
 
     this.displayMainPage = function(req, res, next) {
         "use strict";
-        models.getObjs("games", {}, function(err, obj) {
+        models.getObjs("games", {}, null, function(err, obj) {
           return res.render('index', {
               title: 'Monitor',
               games : obj
@@ -62,8 +62,17 @@ function ContentHandler (db) {
 
     this.getObjs= function(req, res, next) {
 
-        models.getObjs(req.body.coll, req.body.query, function(err, obj) {
+        models.getObjs(req.body.coll, req.body.query, req.body.limit, function(err, obj) {
           return res.json({ obj : obj });
+        });
+
+    }     
+
+    this.updObj= function(req, res, next) {
+
+        models.updObj(req.body.coll, req.body.query, req.body.updobj, function(err, obj) {
+          console.log(err);
+          return res.json({ obj : obj , err: err});
         });
 
     }     

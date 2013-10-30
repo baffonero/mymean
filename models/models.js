@@ -14,7 +14,9 @@ function ModelsDAO(db) {
 
     var mSchema = mongoose.Schema;
 
-    var CollS = new mSchema();
+    var CollS = new mSchema({
+    },
+        { strict: false });
 
     
 
@@ -25,16 +27,28 @@ function ModelsDAO(db) {
     var off = new Date().getTimezoneOffset();
     off = Math.abs(off)*60*1000;
     
-   this.getObjs = function(coll, query, callback) {
+   this.getObjs = function(coll, query, limit, callback) {
         "use strict";
 
         var match = query||{};
-        var resObj = {}; 
-        cmodel(coll).find(match,function(err, results){
+        var resObj = {};
+        var queryObj = cmodel(coll).find(match);
+        if (limit) {
+           queryObj.limit(limit);
+        }
+        queryObj.exec(function(err, results){
             resObj = results;
             return callback(err, resObj);
         });                
     }   
+
+   this.updObj = function(coll, query, updobj, callback) {
+        "use strict";
+        var match = query||{};
+        cmodel(coll).findOneAndUpdate(match,updobj,function(err, obj){
+            return callback(err, obj);
+        });                
+    }
 
    this.getTodayObj = function(coll, query, callback) {
         "use strict";

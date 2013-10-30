@@ -17,6 +17,8 @@ module.exports = exports = function(app, db, passport) {
 
     app.post('/getobjs', authHandler.ensureAuthenticated, contentHandler.getObjs);
 
+    app.post('/updobj', authHandler.ensureAuthenticated, contentHandler.updObj);
+
     app.io.route('getstats', contentHandler.getStats);
 
 //    app.io.route('getstats', function(data,fn) {

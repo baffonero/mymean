@@ -2,6 +2,8 @@ function GamesController($scope, $http) {
   $scope.users = [];
   $scope.scores = [];
 
+  $scope.prefix = "";
+
   $scope.setGames = function(games) {
     $scope.games = games;
   };
@@ -159,4 +161,50 @@ function GamesController($scope, $http) {
 
       return t;
   };
+  $scope.$watch('searchText', function(val) {
+    queryObj = {nick: {$regex: val, $options: 'i' } };
+    queryObj["gamesdet."+$scope.gamePrefix] = {$exists:true};  
+    $scope.queryusers(val); 
+  }); 
+
+  $scope.queryusers  = function(val) {
+     if (val && val.length>2) {
+      $http(
+        {method: 'POST',
+         url: '/getobjs',
+         data: JSON.stringify({coll:"users", query: queryObj, limit: 10}),
+        })
+        .success(function(data) {
+          $scope.users = data.obj;
+          //console.log('search success!');
+
+        }).error(function() {
+          console.log('Search failed!');
+        });      
+    }
+  } 
+
+  $scope.banUser= function(userGuid, mode) {
+    var queryObj = {guid: userGuid};
+    var updobj = {};
+    if (mode == "disable") {
+      updobj.$set = {banned:true};
+    } else {
+      updobj.$unset = {banned:""};
+    }  
+    $http(
+      {method: 'POST',
+       url: '/updobj',
+       data: JSON.stringify({coll:"users", query: queryObj, updobj: updobj}),
+      })
+      .success(function(data) {
+        $scope.queryusers($scope.searchText); 
+ //       console.log('Update success!');
+
+      }).error(function() {
+        console.log('Update failed!');
+      });        
+  } 
+
+     
 }

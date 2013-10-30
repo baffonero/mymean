@@ -1,1 +1,2 @@
-angular.module('MonitorModule', ['ui.bootstrap']);
+angular.module('MonitorModule', ['ui.bootstrap','monitorFilters']);
+
