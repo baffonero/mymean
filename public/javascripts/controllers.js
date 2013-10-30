@@ -4,6 +4,8 @@ function GamesController($scope, $http) {
 
   $scope.prefix = "";
 
+  var socket = io.connect();
+
   $scope.setGames = function(games) {
     $scope.games = games;
   };
@@ -76,7 +78,6 @@ function GamesController($scope, $http) {
   var loadavg=[];
 
   $scope.getServerInfo = function() {
-    var socket = io.connect();
 
     $(".btnConnect").on("click",function(){
       socket.socket.reconnect();
