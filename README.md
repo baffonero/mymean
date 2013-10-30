@@ -18,7 +18,7 @@ Cosa cambia:
 
 2) IMPORTANTE: in tutti gli indicatori del monitor ora le partite in Multiplayer vengono contate una sola volta (tranne "Players playing now" dove ci sono gli effettivi giocatori che stanno giocando in multiplayer, quindi il doppio delle partite)
 
-3) Ci sono due folder:
+3) Ci sono diversi folder:
 
 a) Game Data
     Contiene i dati di Nuovi Utenti giornalieri dell'ultima settimana e le medie degli ultimi 30 giorni e di sempre (non è in real-time, quindi dopo un paio di minuti vuoi vedere la situazione aggiornata premi su "Aggiorna")
@@ -37,3 +37,9 @@ Fondamentalmente è il vecchio monitor, con i dati Real-Time di gioco integrati:
 Per esempio al momento di questa immagine su 88 partite in multiplayer iniziate, 66 hanno avuto una qualche conclusione (di cui 16 per punteggio assegnato per abbandono). Le partite finite per bene diciamo sono 66 - 16 (50 quindi)
 
 ![monitor clip](https://www.clipular.com/c?6316518342131712=cXZXgOWzMaedBNQJS7sjOxq4C6o&f=.png)
+
+c) Users Admin
+
+Permette di ricercare gli utenti per "nickname" e poi fare le seguenti operazioni:
+- visualizzare profilo "Facebook"
+- Disabilitare/Abilitare l'account
