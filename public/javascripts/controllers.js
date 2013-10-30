@@ -181,6 +181,8 @@ function GamesController($scope, $http) {
         }).error(function() {
           console.log('Search failed!');
         });      
+    } else {
+      $scope.users = [];
     }
   } 
 
