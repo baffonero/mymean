@@ -13,10 +13,10 @@ function ContentHandler (db) {
 
     this.displayMainPage = function(req, res, next) {
         "use strict";
-        models.getObjs("games", {}, null, function(err, obj) {
+        models.getObjs({coll:"games"}, function(err, obj) {
           return res.render('index', {
               title: 'Monitor',
-              games : obj
+              games : obj.objs
           });          
         });
     }
@@ -27,7 +27,15 @@ function ContentHandler (db) {
         return res.render('login', {
             title: 'Login'
         });
-    }   
+    }
+
+    this.displaySortBy = function(req, res, next) {
+        "use strict";
+
+        return res.render('sort-by', {
+            title: 'sort-by'
+        });
+    } 
 
     this.displayUsersPage = function(req, res, next) {
         "use strict";
@@ -61,9 +69,9 @@ function ContentHandler (db) {
     }  
 
     this.getObjs= function(req, res, next) {
-
-        models.getObjs(req.body.coll, req.body.query, req.body.limit, function(err, obj) {
-          return res.json({ obj : obj });
+        console.log("req.body.filter",req.body.filter);
+        models.getObjs(req.body.filter, function(err, obj) {
+          return res.json(obj);
         });
 
     }     

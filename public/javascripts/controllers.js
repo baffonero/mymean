@@ -4,6 +4,14 @@ function GamesController($scope, $http) {
 
   $scope.prefix = "";
 
+  $scope.totalPages = 0;
+  $scope.usersCount = 0;
+
+  $scope.filterCriteria = {
+    pageNumber: 1,
+    sort: {_id:-1},
+  };  
+
   var socket = io.connect();
 
   $scope.setGames = function(games) {
@@ -82,6 +90,8 @@ function GamesController($scope, $http) {
     $(".btnConnect").on("click",function(){
       socket.socket.reconnect();
     });
+
+    console.log("tabs", $scope);
 
     var prevcpus = [];
 
@@ -162,30 +172,69 @@ function GamesController($scope, $http) {
 
       return t;
   };
-  $scope.$watch('searchText', function(val) {
-    queryObj = {nick: {$regex: val, $options: 'i' } };
-    queryObj["gamesdet."+$scope.gamePrefix] = {$exists:true};  
-    $scope.queryusers(val); 
-  }); 
 
-  $scope.queryusers  = function(val) {
-     if (val && val.length>2) {
-      $http(
-        {method: 'POST',
-         url: '/getobjs',
-         data: JSON.stringify({coll:"users", query: queryObj, limit: 10}),
+  $scope.fetchResult  = function() {
+    console.log("sort", $scope.filterCriteria.sort);
+    $http(
+      {method: 'POST',
+       url: '/getobjs',
+       data: JSON.stringify(
+        {filter: 
+          {coll:"users", 
+           query: $scope.filterCriteria.queryObj, 
+           page: $scope.filterCriteria.pageNumber,
+           sort : $scope.filterCriteria.sort
+          }
         })
-        .success(function(data) {
-          $scope.users = data.obj;
-          //console.log('search success!');
+      })
+      .success(function(data) {
+        console.log(data.objs, data.TotalPages, data.TotalItems );
+        $scope.users = data.objs;
+        $scope.totalPages = data.TotalPages;
+        $scope.usersCount = data.TotalItems;
+        
 
-        }).error(function() {
-          console.log('Search failed!');
-        });      
-    } else {
-      $scope.users = [];
-    }
+      }).error(function() {
+        console.log('Search failed!');
+        $scope.users = [];
+        $scope.totalPages = 0;
+        $scope.usersCount = 0;        
+      });      
   } 
+
+  $scope.filterResult = function () {
+    console.log($scope.filterCriteria);
+      $scope.filterCriteria.queryObj = {nick: {$regex: $scope.filterCriteria.nick, $options: 'i' } };
+      $scope.filterCriteria.queryObj["gamesdet."+$scope.gamePrefix] = {$exists:true};
+      $scope.filterCriteria.pageNumber = 1;
+      $scope.fetchResult();
+      $scope.filterCriteria.pageNumber = 1;
+
+    //$scope.fetchResult().then(function () {
+      //The request fires correctly but sometimes the ui doesn't update, that's a fix
+    //  $scope.filterCriteria.pageNumber = 1;
+    //});
+  };
+
+  //called when navigate to another page in the pagination
+  $scope.selectPage = function (page) {
+    $scope.filterCriteria.pageNumber = page;
+    $scope.fetchResult();
+  };  
+
+  $scope.onSort = function (sortedBy, sortDir) {
+    //console.log("sortedBy",sortedBy,"sortDir",sortDir);
+    $scope.filterCriteria.sortDir = sortDir;
+    $scope.filterCriteria.sortedBy = sortedBy;
+    $scope.filterCriteria.sort = {};
+    $scope.filterCriteria.sort[sortedBy] = sortDir; 
+    $scope.filterCriteria.pageNumber = 1;
+    $scope.fetchResult()
+  };  
+  
+
+
+  $scope.selectPage(1);
 
   $scope.banUser= function(userGuid, mode) {
     var queryObj = {guid: userGuid};
@@ -209,5 +258,6 @@ function GamesController($scope, $http) {
       });        
   } 
 
+  
      
 }

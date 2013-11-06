@@ -10,7 +10,7 @@ block content
       tabset 
         tab(heading="Game Data" select="getPastData()")
           div.row 
-            div.container(class="col-md-3")
+            div.container(class=["col-md-3","span4"])
                 h4 Nuovi Utenti
                 table(class=["table", "table-condensed", "table-responsive"])
                   tbody
@@ -35,7 +35,7 @@ block content
                         td{{overallUser.tot}} 
                         td{{overallUser.instant}}        
                 button.btn.btn-warning(type='button' ng-click='getPastData()') Aggiorna
-            div.container(class="col-md-4")
+            div.container(class=["col-md-4","span4"])
                 h4 Partite
                 table(class=["table", "table-condensed", "table-responsive"])
                   tbody
@@ -60,7 +60,7 @@ block content
                         td{{overallGame.tot}} 
                         td{{overallGame.instant}} 
         tab(heading="RealTime Data" select="getServerInfo()")
-            div(class=["col-md-4","col-xs-10", "col-sm-10"])
+            div(class=["col-md-4","col-xs-10", "col-sm-10","span4"])
                 h4
                   button.btnConnect RECONNECT
                 table(border='0')
@@ -117,7 +117,7 @@ block content
                     td
                     td
                     td
-            div(class=["col-md-4","col-xs-10", "col-sm-10","gamestats"])          
+            div(class=["col-md-4","col-xs-10", "col-sm-10","gamestats","span4"])          
                 table(class=["table", "table-condensed", "table-responsive"])
                   th.row
                     td Day
@@ -185,32 +185,40 @@ block content
                 div(style='display: none;')
                   | server:
                   span#server        
-        tab(heading="Users Admin" select="")
+        tab(heading="Users Admin")
           div.row 
-            div.container(class="col-md-6")
+            div.container(class=["span12","col-md-6"])
                 h4 Amministrazione Utenti
                 h6 Clicca sulla foto per visualizzare il profilo FB 
-                input#searchText(type='search', placeholder='Digita almeno 3 caratteri...', ng-model='searchText')
+                input#searchText(type='search', placeholder='Digita almeno 3 caratteri...', ng-change="filterResult()", ng-model='filterCriteria.nick')
                 table(class=["table", "table-condensed", "table-responsive"])
                   tbody
                     th.row
                         td #
-                        td Nick
-                        td Email
-                        td Games
-                        td Abil/Disab
+                        td 
+                          sort-by(onsort="onSort" sortdir="filterCriteria.sortDir" sortedby="filterCriteria.sortedBy" sortvalue="nick") Nick
+                        td 
+                          sort-by(onsort="onSort" sortdir="filterCriteria.sortDir" sortedby="filterCriteria.sortedBy" sortvalue="games") Games
+                        td 
+                          sort-by(onsort="onSort" sortdir="filterCriteria.sortDir" sortedby="filterCriteria.sortedBy" sortvalue="created") Data
                     tr.row(ng-repeat="user in users | filter:searchText")  
                         td 
                           a(href='http://www.facebook.com/{{user.fbid}}' target="_blank")
                             img(src="http://graph.facebook.com/{{user.fbid}}/picture" alt="Facebook Image")                   
                         td{{user.nick}} 
-                        td{{user.email}}
                         td{{user.gamesdet[gamePrefix].games}}
-                        td{{user.banned | banned}}
-                        td 
-                          span(ng-show="!user.banned")
-                            button.btn.btn-warning(type='button' ng-click='banUser(user.guid, "disable")') Disabilita                  
-                          span(ng-show="user.banned")
-                            button.btn.btn-warning(type='button' ng-click='banUser(user.guid, "enable")') Abilita                                             
+                        td{{user.created}}
+          div(ng-show="usersCount == 0")
+            h3 No Customers Found
+          div(class="well well-small" ng-show="totalPages > 1")
+            pagination(num-pages="totalPages" items-per-page="5" max-size="10" page="filterCriteria.pageNumber" total-items="usersCount" max-size="10" on-select-page="selectPage(page)" boundary-links="true")
+                  //pager(num-pages="totalPages" page = "filterCriteria.pageNumber" total-items="usersCount" max-size="10" on-select-page="selectPage(filterCriteria.pageNumber+1)")
+
+//                        td{{user.banned | banned}}
+//                        td 
+//                          span(ng-show="!user.banned")
+//                            button.btn.btn-warning(type='button' ng-click='banUser(user.guid, "disable")') Disabilita                  
+//                          span(ng-show="user.banned")
+//                            button.btn.btn-warning(type='button' ng-click='banUser(user.guid, "enable")') Abilita                                             
                             
                           

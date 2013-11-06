@@ -1,5 +1,6 @@
 var bcrypt = require('bcrypt'),
-    mongoose = require('mongoose');
+    mongoose = require('mongoose'),
+    async = require('async');
 
 /* The IndexDAO must be constructed with a connected database object */
 function ModelsDAO(db) {
@@ -18,6 +19,8 @@ function ModelsDAO(db) {
     },
         { strict: false });
 
+    var pageObjs = 5;
+
     
 
     function cmodel (coll) {
@@ -27,19 +30,40 @@ function ModelsDAO(db) {
     var off = new Date().getTimezoneOffset();
     off = Math.abs(off)*60*1000;
     
-   this.getObjs = function(coll, query, limit, callback) {
+   this.getObjs = function(filter, callback) {
         "use strict";
+        // pageObjs
+        var coll = filter.coll; 
+        var query = filter.query;
+        var page = filter.page;
+        var sort = filter.sort;
 
+        //$scope.totalPages = data.TotalPages;
+        //$scope.usersCount = data.TotalItems;
+        
         var match = query||{};
         var resObj = {};
         var queryObj = cmodel(coll).find(match);
-        if (limit) {
-           queryObj.limit(limit);
+        var countObj = cmodel(coll).count(match);
+
+        if (sort) {
+           queryObj.sort(sort);
+        }    
+
+        if (page && page > 1) {
+            queryObj.skip((page-1)*pageObjs);    
         }
-        queryObj.exec(function(err, results){
-            resObj = results;
-            return callback(err, resObj);
-        });                
+
+        queryObj.limit(pageObjs);
+
+        countObj.exec(function(err, count){
+            resObj.TotalItems = count;
+            resObj.TotalPages = Math.ceil(resObj.TotalItems/pageObjs);
+            queryObj.exec(function(err, results){
+                resObj.objs = results;
+                return callback(err, resObj);
+            });             
+        });   
     }   
 
    this.updObj = function(coll, query, updobj, callback) {
