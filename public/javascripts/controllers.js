@@ -1,4 +1,4 @@
-function GamesController($scope, $http) {
+function GamesController($scope, $http, $modal, $log) {
   $scope.users = [];
   $scope.scores = [];
 
@@ -258,6 +258,62 @@ function GamesController($scope, $http) {
       });        
   } 
 
+  $scope.open = function (user, prefix) {
+
+    var modalInstance = $modal.open({
+      templateUrl: 'usermod',
+      controller: ModalInstanceCtrl,
+      resolve: {
+        user: function () {
+          return user;
+        },
+        prefix: function () {
+          return prefix;
+        }  
+      }
+    });
+
+    modalInstance.result.then(function () {
+    }, function () {
+      $log.info('Modal dismissed at: ' + new Date());
+    });
+  };
   
      
 }
+
+var ModalInstanceCtrl = function ($scope, $modalInstance, $http, user, prefix) {
+  console.log(user, prefix);
+  $scope.user = user;
+  $scope.prefix = prefix;
+
+  $scope.ok = function () {
+    $modalInstance.close();
+  };
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+  $scope.banUser= function(userGuid, mode) {
+    var queryObj = {guid: userGuid};
+    var updobj = {};
+    if (mode == "disable") {
+      updobj.$set = {banned:true};
+    } else {
+      updobj.$unset = {banned:""};
+    }  
+    $http(
+      {method: 'POST',
+       url: '/updobj',
+       data: JSON.stringify({coll:"users", query: queryObj, updobj: updobj}),
+      })
+      .success(function(data) {
+        //$scope.queryusers($scope.searchText); 
+        $scope.user.banned = !$scope.user.banned;
+ //       console.log('Update success!');
+
+      }).error(function() {
+        console.log('Update failed!');
+      });        
+  }   
+};

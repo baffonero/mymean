@@ -1,0 +1,31 @@
+div(class="modal-header")
+  div
+    h3 {{user.nick}} 
+div(class="modal-body")
+    div 
+      a(href='http://www.facebook.com/{{user.fbid}}' target="_blank")
+        img(src="http://graph.facebook.com/{{user.fbid}}/picture" alt="Facebook Image")
+          
+    div 
+      li Name: {{user.name}}
+      li Email: {{user.email}}
+      li Created: {{user.created | datetime}}
+      li Games: {{user.gamesdet[prefix].games}}  
+      li Deck: {{user.gamesdet[prefix].deck}} 
+      li Won: {{user.gamesdet[prefix].won}}
+      li Straigth Won: {{user.gamesdet[prefix].strwon}}
+      li Opponents: {{user.gamesdet[prefix].opps | arraylength}} 
+      li Sent Invites: {{user.gamesdet[prefix].sentinv | arraylength}}
+      li Badges: {{user.gamesdet[prefix].badge | arraylength}}
+      li Stato: {{user.banned | banned}}
+      li 
+        span(ng-show="!user.banned")
+          button.btn.btn-warning(type='button' ng-click='banUser(user.guid, "disable")') Disabilita                  
+        span(ng-show="user.banned")
+          button.btn.btn-warning(type='button' ng-click='banUser(user.guid, "enable")') Abilita                                             
+
+
+
+  div(class="modal-footer")
+    button.btn.btn-primary(ng-click='ok()') Close
+    //button.btn.btn-warning(ng-click='cancel()') Cancel

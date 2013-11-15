@@ -187,7 +187,8 @@ module.exports = {
 			"name": "L'uomo da battere",
 			"meaning": "Rimani per 7 giorni consecutivi tra i primi 10 della classifica multiplayer",
 			"symbol": "",
-			"formula" : "if(chObj.user.gamesdet.scopa.tp10row) {chObj.user.gamesdet.scopa.tp10row.MULTIPLAYER >= 7}"
+			//"formula" : "if(chObj.user.gamesdet.scopa.tp10row) {chObj.user.gamesdet.scopa.tp10row.MULTIPLAYER >= 7}"
+			"formula" :"1===2"
 		},
 		{	"code":"027", 
 		 	"when": "ldbrds",
@@ -195,7 +196,8 @@ module.exports = {
 			"name": "Il primo della classe",
 			"meaning": "Rimani per 7 giorni consecutivi tra i primi 10 della classifica singleplayer principianti",
 			"symbol": "bambino con grembiule",
-			"formula" : "if(chObj.user.gamesdet.scopa.tp10row) {chObj.user.gamesdet.scopa.tp10row.BEGINNER >= 7}"
+			//"formula" : "if(chObj.user.gamesdet.scopa.tp10row) {chObj.user.gamesdet.scopa.tp10row.BEGINNER >= 7}"
+			"formula" :"1===2"
 		},
 		{	"code":"028", 
 		 	"when": "ldbrds",
@@ -203,7 +205,8 @@ module.exports = {
 			"name": "L'astro nascente",
 			"meaning": "Rimani per 7 giorni consecutivi tra i primi 10 della classifica singleplayer intermedi",
 			"symbol": "stella proiettata verso l'alto",
-			"formula" : "if(chObj.user.gamesdet.scopa.tp10row) {chObj.user.gamesdet.scopa.tp10row.MIDDLE >= 7}"
+			//"formula" : "if(chObj.user.gamesdet.scopa.tp10row) {chObj.user.gamesdet.scopa.tp10row.MIDDLE >= 7}"
+			"formula" :"1===2"
 		},
 		{	"code":"029", 
 		 	"when": "ldbrds",
@@ -211,7 +214,8 @@ module.exports = {
 			"name": "Il grande giocatore",
 			"meaning": "Rimani per 7 giorni consecutivi tra i primi 10 della classifica singleplayer esperti",
 			"symbol": "",
-			"formula" : "if(chObj.user.gamesdet.scopa.tp10row) {chObj.user.gamesdet.scopa.tp10row.ADVANCED >= 7}"
+			//"formula" : "if(chObj.user.gamesdet.scopa.tp10row) {chObj.user.gamesdet.scopa.tp10row.ADVANCED >= 7}"
+			"formula" :"1===2"
 		},
 		{	"code":"030", 
 		 	"when": "ldbrds",
@@ -219,7 +223,8 @@ module.exports = {
 			"name": "L'eroe dei due mondi",
 			"meaning": "Rimani per 7 giorni consecutivi tra i primi 10 della classifica multiplayer e in una delle classifiche singleplayer",
 			"symbol": "",
-			"formula" : "if(chObj.user.gamesdet.scopa.tp10row) {chObj.user.gamesdet.scopa.tp10row.MULTIPLAYER >= 7 && (chObj.user.gamesdet.scopa.tp10row.ADVANCED >= 7||chObj.user.gamesdet.scopa.tp10row.MIDDLE >= 7||chObj.user.gamesdet.scopa.tp10row.BEGINNER >= 7)}"
+			//"formula" : "if(chObj.user.gamesdet.scopa.tp10row) {chObj.user.gamesdet.scopa.tp10row.MULTIPLAYER >= 7 && (chObj.user.gamesdet.scopa.tp10row.ADVANCED >= 7||chObj.user.gamesdet.scopa.tp10row.MIDDLE >= 7||chObj.user.gamesdet.scopa.tp10row.BEGINNER >= 7)}"
+			"formula" :"1===2"
 		},
 		{	"code":"031", 
 		 	"when": "savescore",
@@ -259,7 +264,7 @@ module.exports = {
 			"name": "Batti il gigante",
 			"meaning": "Vinci contro uno dei primi 10 in classifica",
 			"symbol": "",
-			"formula" : "if (chObj.opp) {(chObj.score.won === 1 && chObj.opp[chObj.score.ldbrd]['rank'] <= 10)} else {false}"
+			"formula" : "if (chObj.opp[chObj.score.ldbrd]) {(chObj.score.won === 1 && chObj.opp[chObj.score.ldbrd]['rank'] <= 10)} else {false}"
 		},
 		{	"code":"036", 
 		 	"when": "Fine partita",

@@ -2,3 +2,9 @@ body {
 	background:#000000;
 	color:#ccc;
 }
+
+.modal-body {
+	background:#000000;
+	color:#ccc;
+	list-style-type: none;
+}

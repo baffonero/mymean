@@ -37,6 +37,14 @@ function ContentHandler (db) {
         });
     } 
 
+    this.displayUserMod = function(req, res, next) {
+        "use strict";
+
+        return res.render('usermod', {
+            title: 'user'
+        });
+    } 
+
     this.displayUsersPage = function(req, res, next) {
         "use strict";
 

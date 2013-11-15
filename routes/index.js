@@ -14,6 +14,8 @@ module.exports = exports = function(app, db, passport) {
 
     app.get('/sort-by', authHandler.ensureAuthenticated, contentHandler.displaySortBy);
 
+    app.get('/usermod', authHandler.ensureAuthenticated, contentHandler.displayUserMod);    
+
     app.post('/getpastobj', authHandler.ensureAuthenticated, contentHandler.getPastObj);
     app.post('/gettodayobj', authHandler.ensureAuthenticated, contentHandler.getTodayObj);
 
