@@ -1,0 +1,7 @@
+MongoDB shell version: 2.4.4
+connecting to: test
+UPDATE MAILING LIST
+connecting to: localhost/final7
+totdocs: 1000
+Mon Sep 30 16:54:20.432 JavaScript execution failed: TypeError: Cannot read property 'length' of undefined at dropimages.js:L14
+failed to load: dropimages.js
