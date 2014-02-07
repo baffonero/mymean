@@ -200,6 +200,8 @@ block content
                         td 
                           sort-by(onsort="onSort" sortdir="filterCriteria.sortDir" sortedby="filterCriteria.sortedBy" sortvalue="games") Games
                         td 
+                          sort-by(onsort="onSort" sortdir="filterCriteria.sortDir" sortedby="filterCriteria.sortedBy" sortvalue="banned") Ban
+                        td 
                           sort-by(onsort="onSort" sortdir="filterCriteria.sortDir" sortedby="filterCriteria.sortedBy" sortvalue="created") Data
                     tr.row(ng-repeat="user in users | filter:searchText")  
                         td 
@@ -207,9 +209,10 @@ block content
                             img(src="http://graph.facebook.com/{{user.fbid}}/picture" alt="Facebook Image")                   
                         td{{user.nick}} 
                         td{{user.gamesdet[gamePrefix].games}}
+                        td{{user.banned | banned}}
                         td{{user.created | datetime}}
                         td 
-                          button(class=["btn btn-small","btn-success"] ng-click="open(user, gamePrefix)") details
+                          button(class=["btn btn-small","btn-success"] ng-click="open(user, gamePrefix)") det
           div(ng-show="usersCount == 0")
             h3 No Customers Found
           div(class="well well-small" ng-show="totalPages > 1")

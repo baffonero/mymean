@@ -27407,3 +27407,172 @@
 [2674] 05 Nov 18:45:03 * Saving the final RDB snapshot before exiting.
 [2674] 05 Nov 18:45:03 * DB saved on disk
 [2674] 05 Nov 18:45:03 # Redis is now ready to exit, bye bye...
+[3154] 07 Feb 13:57:24 # Warning: no config file specified, using the default config. In order to specify a config file use 'redis-server /path/to/redis.conf'
+[3154] 07 Feb 13:57:24 * Server started, Redis version 2.4.18
+[3154] 07 Feb 13:57:24 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[3154] 07 Feb 13:57:24 * DB loaded from disk: 0 seconds
+[3154] 07 Feb 13:57:24 * The server is now ready to accept connections on port 6379
+[3154] 07 Feb 13:57:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:57:25 - 0 clients connected (0 slaves), 821800 bytes in use
+[3154] 07 Feb 13:57:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:57:30 - 0 clients connected (0 slaves), 821800 bytes in use
+[3154] 07 Feb 13:57:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:57:35 - 0 clients connected (0 slaves), 821800 bytes in use
+[3154] 07 Feb 13:57:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:57:40 - 0 clients connected (0 slaves), 821800 bytes in use
+[3154] 07 Feb 13:57:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:57:45 - 0 clients connected (0 slaves), 821800 bytes in use
+[3154] 07 Feb 13:57:46 - Accepted 127.0.0.1:41094
+[3154] 07 Feb 13:57:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:57:50 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:57:55 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:57:55 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:58:00 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:58:00 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:58:05 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:58:05 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:58:10 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:58:10 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:58:15 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:58:15 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:58:20 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:58:20 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:58:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:58:25 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:58:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:58:30 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:58:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:58:35 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:58:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:58:40 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:58:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:58:45 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:58:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:58:50 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:58:55 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:58:55 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:59:00 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:59:00 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:59:05 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:59:05 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:59:10 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:59:10 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:59:15 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:59:15 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:59:20 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:59:20 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:59:25 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:59:25 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:59:30 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:59:30 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:59:35 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:59:35 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:59:40 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:59:40 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:59:45 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:59:45 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:59:50 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:59:50 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 13:59:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 13:59:56 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:00:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:00:01 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:00:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:00:06 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:00:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:00:11 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:00:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:00:16 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:00:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:00:21 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:00:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:00:26 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:00:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:00:31 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:00:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:00:36 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:00:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:00:41 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:00:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:00:46 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:00:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:00:51 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:00:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:00:56 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:01:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:01:01 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:01:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:01:06 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:01:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:01:11 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:01:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:01:16 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:01:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:01:21 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:01:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:01:26 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:01:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:01:31 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:01:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:01:36 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:01:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:01:41 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:01:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:01:46 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:01:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:01:51 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:01:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:01:56 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:02:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:02:01 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:02:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:02:06 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:02:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:02:11 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:02:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:02:16 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:02:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:02:21 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:02:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:02:26 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:02:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:02:31 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:02:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:02:36 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:02:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:02:41 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:02:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:02:46 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:02:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:02:51 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:02:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:02:56 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:03:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:03:01 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:03:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:03:06 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:03:11 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:03:11 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:03:16 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:03:16 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:03:21 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:03:21 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:03:26 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:03:26 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:03:31 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:03:31 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:03:36 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:03:36 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:03:41 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:03:41 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:03:46 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:03:46 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:03:51 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:03:51 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:03:56 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:03:56 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:04:01 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:04:01 - 1 clients connected (0 slaves), 830368 bytes in use
+[3154] 07 Feb 14:04:04 - Client closed connection
+[3154] 07 Feb 14:04:06 - DB 0: 32 keys (0 volatile) in 32 slots HT.
+[3154] 07 Feb 14:04:06 - 0 clients connected (0 slaves), 821800 bytes in use

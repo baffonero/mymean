@@ -4,7 +4,7 @@ var filters = angular.module('monitorFilters', []);
 
 filters.filter('banned', function() {
 	  return function(input) {
-	    return input ? 'Disabilitato' : 'Abilitato';
+	    return input ? 'Disab.' : 'Abil.';
 	  };
 	});
 
