@@ -4,7 +4,8 @@
 //});
 
 
-var newdb = "scopa.digitalmoka.com/giochipiu";
+//var newdb = "scopa.digitalmoka.com/giochipiu";
+var newdb = "scopalocal.digitalmoka.com/giochipiu";
 var mydb = connect(newdb);
 var tot = 0;
 var agg = 0;
@@ -20,7 +21,7 @@ function esiste(arra, obj) {
 	while (arra[i])
 	 {
 	   //print ("utente "+arra[i].nick+" "+obj);
-       if (arra[i].nick === obj) {return true};
+       if (arra[i].un === obj) {return true};
 	   i += 1;
      }
 	 return false;
@@ -38,14 +39,14 @@ function assignNick(userObj, callback) {
       tmpNick += " "+nameArray[1].substring(0, 1)+'.'; 
     }
   }
-    docs = mydb.users.find({nick: new RegExp("^"+tmpNick)},{nick:1});
+    docs = mydb.users.find({un: new RegExp("^"+tmpNick.toLowerCase())},{nick:1, un: 1});
 	  if (docs[0]) {
 		var suffix = 0;
 		do
 		  {
 			suffix += 1;
 			var candNick = tmpNick+suffix.toString();
-			var checkNick = esiste(docs,candNick);
+			var checkNick = esiste(docs,candNick.toLowerCase());
 			//print(candNick+" "+checkNick);
 		  }
 		while (checkNick);  
@@ -71,16 +72,14 @@ var curr = mydb.users.aggregate(
 curr.forEach( function(doppio) {
     var vregex = "^"+doppio._id+"$";
 	tot += 1;
-	var vdoppi := 0;
-	mydb.users.find({nick: {$regex: vregex,$options:'i'}}).forEach(function(user) {
+	var vdoppi = 0;
+	mydb.users.find({nick: {$regex: vregex,$options:'i'}}).sort({authMode:-1, _id: 1}).forEach(function(user) {
 	    vdoppi += 1;
         if (vdoppi > 1) {		
-			var vName = user.name.replace("."," ").capitalize();
-			//print("NamePre:"+vName);
-			var nickObj = {name:vName};  
+			var nickObj = {nick:user.nick};  
 			assignNick(nickObj,function (defNick, nickInUse)  {
-				print("Name:"+vName+" Nick:"+defNick);
-				mydb.users.update({_id: user._id},{$set:{nick:defNick}});
+				print("OldNick:"+user.nick+" Nick:"+defNick);
+				mydb.users.update({_id: user._id},{$set:{nick:defNick, un:defNick.toLowerCase()}});
 				var updcount = mydb.getLastErrorObj();
 
 				if (updcount) {
