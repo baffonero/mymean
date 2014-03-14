@@ -19,7 +19,7 @@ function ModelsDAO(db) {
     },
         { strict: false });
 
-    var pageObjs = 5;
+    var pageObjs = 20;
 
     
 

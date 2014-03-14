@@ -216,7 +216,7 @@ block content
           div(ng-show="usersCount == 0")
             h3 No Customers Found
           div(class="well well-small" ng-show="totalPages > 1")
-            pagination(num-pages="totalPages" items-per-page="5" max-size="10" page="filterCriteria.pageNumber" total-items="usersCount" max-size="10" on-select-page="selectPage(page)" boundary-links="true")
+            pagination(num-pages="totalPages" items-per-page="20" max-size="20" page="filterCriteria.pageNumber" total-items="usersCount" on-select-page="selectPage(page)" boundary-links="true")
                   //pager(num-pages="totalPages" page = "filterCriteria.pageNumber" total-items="usersCount" max-size="10" on-select-page="selectPage(filterCriteria.pageNumber+1)")
 
 //                        td{{user.banned | banned}}
