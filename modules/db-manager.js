@@ -8,7 +8,8 @@ var mongoConnString = 'mongodb://'+config.mongoHost+'/'+DS.mongoDb;
 
 var DB = {};
 
-DB.mongo = mongoose.connect(mongoConnString);
+var options = {server: { autoReconnect: true, socketOptions:{ keepAlive: 1 }}};
+DB.mongo = mongoose.connect(mongoConnString,options);
 DB.redis = redis.createClient(6379,config.redisHost);
 
 module.exports = DB;

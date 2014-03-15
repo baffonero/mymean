@@ -4,8 +4,8 @@
 //});
 
 
-//var newdb = "scopa.digitalmoka.com/giochipiu";
-var newdb = "scopalocal.digitalmoka.com/giochipiu";
+var newdb = "scopa.digitalmoka.com/giochipiu";
+//var newdb = "scopalocal.digitalmoka.com/giochipiu";
 var mydb = connect(newdb);
 var tot = 0;
 var agg = 0;
@@ -78,7 +78,7 @@ curr.forEach( function(doppio) {
         if (vdoppi > 1) {		
 			var nickObj = {nick:user.nick};  
 			assignNick(nickObj,function (defNick, nickInUse)  {
-				print("OldNick:"+user.nick+" Nick:"+defNick);
+				print("OldNick:"+user.nick+" Nick:"+defNick+" Auth "+user.authMode);
 				mydb.users.update({_id: user._id},{$set:{nick:defNick, un:defNick.toLowerCase()}});
 				var updcount = mydb.getLastErrorObj();
 
