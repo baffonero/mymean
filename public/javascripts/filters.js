@@ -20,6 +20,16 @@ filters.filter('datetime', function() {
 	  };
 	});
 
+filters.filter('onlydate', function() {
+	  return function(input) {
+	  	var d = new Date(input);
+	  	var day = d.getDate();
+	  	var month = d.getMonth()+1;
+	  	var year = d.getFullYear();
+	    return day+"/"+month+"/"+year;
+	  };
+	});
+
 filters.filter('arraylength', function() {
 	  return function(input) {
 	    return input ?input.length:0;

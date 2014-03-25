@@ -63,7 +63,17 @@ function ContentHandler (db) {
           return res.json({ obj : obj });
         });
 
-    }    
+    }   
+
+    this.getPastStats= function(req, res, next) {
+        models.getPastStats(req.body.coll, req.body.query, function(err, obj) {
+          if (err) {
+            return {};
+          }
+          return res.json({ obj : obj });
+        });
+
+    }   
 
     this.getTodayObj= function(req, res, next) {
 

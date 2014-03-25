@@ -18,22 +18,10 @@ block content
                         td Data
                         td Utenti
                         td Alle {{datetime}}
-                    tr.row
-                        td OGGI
-                        td{{todayUsers}} 
-                        td{{todayUsers}}                         
-                    tr.row(ng-repeat="lastDaysUser in lastDaysUsers")
-                        td{{lastDaysUser._id.giorno}}/{{lastDaysUser._id.mese}}/{{lastDaysUser._id.anno}}
-                        td{{lastDaysUser.tot}} 
-                        td{{lastDaysUser.instant}} 
-                    tr.row(ng-repeat="lastMonthUser in lastMonthUsers")
-                        td Ultimi 30 giorni
-                        td{{lastMonthUser.tot}} 
-                        td{{lastMonthUser.instant}} 
-                    tr.row(ng-repeat="overallUser in overallUsers")
-                        td Di Sempre
-                        td{{overallUser.tot}} 
-                        td{{overallUser.instant}}        
+                    tr.row(ng-repeat="lastDaysStat in lastDaysStats")
+                        td {{lastDaysStat.created | onlydate}}
+                        td {{lastDaysStat.du}}
+                        td {{lastDaysStat.du}}
                 button.btn.btn-warning(type='button' ng-click='getPastData()') Aggiorna
             div.container(class=["col-md-4","span4"])
                 h4 Partite
@@ -43,22 +31,14 @@ block content
                         td Data
                         td Partite
                         td Alle {{datetime}}
-                    tr.row
-                        td OGGI
-                        td{{todayGames}} 
-                        td{{todayGames}}                         
-                    tr.row(ng-repeat="lastDaysGame in lastDaysGames")
-                        td{{lastDaysGame._id.giorno}}/{{lastDaysGame._id.mese}}/{{lastDaysGame._id.anno}}
-                        td{{lastDaysGame.tot}} 
-                        td{{lastDaysGame.instant}} 
-                    tr.row(ng-repeat="lastMonthGame in lastMonthGames")
-                        td Ultimi 30 giorni
-                        td{{lastMonthGame.tot}} 
-                        td{{lastMonthGame.instant}} 
-                    tr.row(ng-repeat="overallGame in overallGames")
-                        td Di Sempre
-                        td{{overallGame.tot}} 
-                        td{{overallGame.instant}} 
+                        td Multi 
+                        td Multi alle {{datetime}} 
+                    tr.row(ng-repeat="lastDaysStat in lastDaysStats")
+                        td{{lastDaysStat.created | onlydate}}
+                        td{{lastDaysStat.dg}} 
+                        td{{lastDaysStat.dg}}
+                        td{{lastDaysStat.dm}} 
+                        td{{lastDaysStat.dm}}
         tab(heading="RealTime Data" select="getServerInfo()")
             div(class=["col-md-4","col-xs-10", "col-sm-10","span4"])
                 h4

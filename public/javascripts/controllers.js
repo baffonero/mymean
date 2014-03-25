@@ -27,43 +27,26 @@ function GamesController($scope, $http, $modal, $log) {
     $http({url:'/getobjs', method: "POST", data: JSON.stringify({coll:"games"})}).success(function(data) {    
       $scope.games = data.obj.objs;
     });
-  }  
+  }   
+
   $scope.getPastData = function() {
     $scope.getDatetime();
-    $scope.getPastUsers($scope.gamePrefix); 
-    $scope.getPastGames($scope.gamePrefix);
+    $scope.getPastStats($scope.gamePrefix); 
   }  
 
-  $scope.getTodayUsers = function(gamePrefix) {
-    var queryObj = {};
-    queryObj["gamesdet."+gamePrefix] = {$exists:true};
-
-    $http({url:'/gettodayobj', method: "POST", data: JSON.stringify({coll:"users", query: queryObj})}).success(function(data) {    
-      $scope.todayUsers = data.obj.todayObj;
-    });
-       
-  }  
-
-  $scope.getPastUsers = function(gamePrefix) {
-    var queryObj = {};
-    queryObj["gamesdet."+gamePrefix] = {$exists:true};    
-    $http({url:'/getpastobj', method: "POST", data: JSON.stringify({coll:"users", query:queryObj})}).success(function(data) {    
-      $scope.lastDaysUsers = data.obj.lastDaysObj;
-      $scope.lastMonthUsers = data.obj.lastMonthObj;
-      $scope.overallUsers = data.obj.overallObj;
-      $scope.getTodayUsers(gamePrefix);
-    });
-  };
-
-  $scope.getTodayGames = function(gamePrefix) {
+  $scope.getPastStats= function(gamePrefix) {
     var collObj = {};
-    collObj.coll = gamePrefix+".scores"; 
-    collObj.query = {$or:[{won:1}, {guidopp:null}]};      
-    $http({url:'/gettodayobj', method: "POST", data: JSON.stringify(collObj)}).success(function(data) {
-      $scope.todayGames = data.obj.todayObj;
-  
-    });    
-  }  
+    collObj.coll = gamePrefix+".dstats";   
+    collObj.query = {"isM":true};    
+    console.log("collObj",collObj);
+    $http({url:'/getpaststats', method: "POST", data: JSON.stringify(collObj)}).success(function(data) {
+      
+      $scope.lastDaysStats = data.obj.lastDaysStats;
+      console.log("scope.data",$scope.lastDaysStats);
+    });
+  }; 
+
+
 
   $scope.getDatetime = function() {
     var actDate = new Date();
@@ -71,17 +54,6 @@ function GamesController($scope, $http, $modal, $log) {
       
   }  
 
-  $scope.getPastGames = function(gamePrefix) {
-    var collObj = {};
-    collObj.coll = gamePrefix+".scores";   
-    collObj.query = {$or:[{won:1}, {guidopp:null}]};    
-    $http({url:'/getpastobj', method: "POST", data: JSON.stringify(collObj)}).success(function(data) {
-      $scope.lastDaysGames = data.obj.lastDaysObj;
-      $scope.lastMonthGames = data.obj.lastMonthObj;
-      $scope.overallGames = data.obj.overallObj;
-      $scope.getTodayGames(gamePrefix);
-    });
-  };  
 
   var loadavg=[];
 
@@ -188,7 +160,7 @@ function GamesController($scope, $http, $modal, $log) {
         })
       })
       .success(function(data) {
-        console.log(data.objs, data.TotalPages, data.TotalItems );
+        //console.log(data.objs, data.TotalPages, data.TotalItems );
         $scope.users = data.objs;
         $scope.totalPages = data.TotalPages;
         $scope.usersCount = data.TotalItems;

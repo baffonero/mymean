@@ -1,6 +1,7 @@
 var bcrypt = require('bcrypt'),
     mongoose = require('mongoose'),
-    async = require('async');
+    async = require('async'),
+    _ = require('underscore');
 
 /* The IndexDAO must be constructed with a connected database object */
 function ModelsDAO(db) {
@@ -98,8 +99,7 @@ function ModelsDAO(db) {
         var resObj = {}; 
 
         var that = this;
-        that.getLastDaysObj(coll, numlastDays,query, function(err, results){
-
+        that.getLastDaysStats(coll, numlastDays,query, function(err, results){
             resObj.lastDaysObj = results||{};
             that.getAverageObj(coll, numlastMonth,query, function(err, results){
                 if (err) {
@@ -116,6 +116,61 @@ function ModelsDAO(db) {
             });
         });
 
+    }
+
+   this.getPastStats = function(coll, query, callback) {
+        "use strict";
+
+        var numlastDays = 7;
+        var numlastMonth = 30;
+
+        var resObj = {}; 
+
+        var that = this;
+
+        that.getLastDaysStats(coll, numlastDays,query, function(err, results){
+            resObj.lastDaysStats = results||{};
+            return callback(err, resObj);
+        });
+
+    }
+   this.getLastDaysStats = function(coll, numDay, query, callback) {
+        "use strict";
+
+        var numGG = numDay;
+        var endDate = new Date();//.toISOString();
+        var match = query;
+
+
+        var statList = [];
+        var countD = 0;
+
+        for (var i=0;i<numGG;i++)
+          {
+            if (i>0) {
+              endDate.setDate(endDate.getDate()-1);
+            }  
+            match.created = {$lte:endDate};     
+            var q = cmodel(coll).findOne(match).sort({created:-1});
+            q.exec(function(err, stat) {
+                //var stat = stats[0]._doc;
+                if (stat) {
+                    statList.push(stat);    
+                }
+                //console.log(statList);
+                countD += 1;
+                if (countD === numGG) {
+                    var sortedList = _.sortBy(statList, function(stat){ 
+                        return -stat._doc.created.getTime(); 
+                    });
+                    return callback(null, sortedList);
+                } 
+            });
+          }
+
+        //console.log("endMinute", endMinute);
+
+        
     }
 
    this.getAverageObj = function(coll, numDay, query, callback) {
