@@ -13,32 +13,44 @@ block content
             div.container(class=["col-md-3","span4"])
                 h4 Nuovi Utenti
                 table(class=["table", "table-condensed", "table-responsive"])
-                  tbody
-                    th.row
-                        td Data
-                        td Utenti
-                        td Alle {{datetime}}
-                    tr.row(ng-repeat="lastDaysStat in lastDaysStats")
+                  thead
+                    tr
+                        td(rowspan='2') Date
+                        td(colspan='2') Users
+                    tr
+                        td Tot
+                        td {{datetime}} 
+                  tbody                             
+                    tr(ng-repeat="lastDaysStat in lastDaysStats")
                         td {{lastDaysStat.created | onlydate}}
-                        td {{lastDaysStat.du}}
+                        td {{lastDaysStat.tdu}}
                         td {{lastDaysStat.du}}
                 button.btn.btn-warning(type='button' ng-click='getPastData()') Aggiorna
             div.container(class=["col-md-4","span4"])
                 h4 Partite
                 table(class=["table", "table-condensed", "table-responsive"])
-                  tbody
-                    th.row
-                        td Data
-                        td Partite
-                        td Alle {{datetime}}
-                        td Multi 
-                        td Multi alle {{datetime}} 
-                    tr.row(ng-repeat="lastDaysStat in lastDaysStats")
+                  thead
+                    tr
+                        td(rowspan='2') Date
+                        td(colspan='2') Games
+                        td(colspan='2') Multi 
+                        td(colspan='2') Chat 
+                    tr
+                        td Tot
+                        td {{datetime}}
+                        td Tot 
+                        td {{datetime}} 
+                        td Tot
+                        td {{datetime}} 
+                  tbody                             
+                    tr(ng-repeat="lastDaysStat in lastDaysStats")
                         td{{lastDaysStat.created | onlydate}}
-                        td{{lastDaysStat.dg}} 
+                        td{{lastDaysStat.tdg}} 
                         td{{lastDaysStat.dg}}
-                        td{{lastDaysStat.dm}} 
+                        td{{lastDaysStat.tdm}} 
                         td{{lastDaysStat.dm}}
+                        td{{lastDaysStat.tdc}} 
+                        td{{lastDaysStat.cm}}
         tab(heading="RealTime Data" select="getServerInfo()")
             div(class=["col-md-4","col-xs-10", "col-sm-10","span4"])
                 h4
