@@ -1,10 +1,10 @@
-var newdb = "scopa.digitalmoka.com/giochipiu";
+var newdb = "dmokamongo.cloudapp.net/giochipiu";
 var mydb = connect(newdb);
 var tot = 0;
 var agg = 0;
 
 function getLastGame(userObj, callback) {
-	docs = mydb.scopa.scores.findOne({guid: userObj.guid });
+	docs = mydb.scopa.scores.findOne({guid: userObj.guid }).sort({created:-1});
 	if (docs.created) {
 		callback(docs.created);
     } else {    
