@@ -18,7 +18,7 @@ curr.forEach( function(user) {
     tot += 1;
     var usrObj = {guid:user.guid};  
     getLastGame(usrObj, function (lastGame)  {
-		if (lastgame) {
+		if (lastGame) {
 		  //user.gamesdet.scopa.lg = lastGame;
 		  //mydb.users.save(user);	
 		  agg += 1;
