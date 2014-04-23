@@ -21,7 +21,7 @@ curr.forEach( function(user) {
 
 		if (lastGame) {
 		  user.gamesdet.scopa.lg = lastGame;
-		  print("user: ", user);
+		  print("user: ", JSON.stringify(user));
 		  //mydb.users.save(user);	
 		  agg += 1;
 		}
