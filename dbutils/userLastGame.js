@@ -12,14 +12,16 @@ function getLastGame(userObj, callback) {
 	}    
 }
 
-var curr = mydb.users.find({"gamesdet.scopa":{$exists:true}, "gamesdet.scopa.lg":{$exists:false}});
+var curr = mydb.users.find({"gamesdet.scopa":{$exists:true}, "gamesdet.scopa.lg":{$exists:false}}).limit(10);
 
 curr.forEach( function(user) {
     tot += 1;
     var usrObj = {guid:user.guid};  
     getLastGame(usrObj, function (lastGame)  {
+
 		if (lastGame) {
-		  //user.gamesdet.scopa.lg = lastGame;
+		  user.gamesdet.scopa.lg = lastGame;
+		  print("user: ", user);
 		  //mydb.users.save(user);	
 		  agg += 1;
 		}
