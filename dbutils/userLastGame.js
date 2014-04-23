@@ -5,7 +5,7 @@ var agg = 0;
 
 function getLastGame(userObj, callback) {
 	docs = mydb.scopa.scores.find({guid: userObj.guid }).sort({created:-1}).limit(1);
-	if (docs.created) {
+	if (docs[0].created) {
 		callback(docs.created);
     } else {    
 	  	callback(null);
