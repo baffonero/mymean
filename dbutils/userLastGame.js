@@ -12,7 +12,7 @@ function getLastGame(userObj, callback) {
 	}    
 }
 
-var curr = mydb.users.find({"gamesdet.scopa":{$exists:true}, "gamesdet.scopa.lg":{$exists:false}}).limit(10);
+var curr = mydb.users.find({"gamesdet.scopa":{$exists:true}, "gamesdet.scopa.lg":{$exists:false}});
 
 curr.forEach( function(user) {
     tot += 1;
