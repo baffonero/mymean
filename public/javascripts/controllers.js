@@ -24,7 +24,7 @@ function GamesController($scope, $http, $modal, $log) {
   };
 
   $scope.getGames = function() {
-    $http({url:'/getobjs', method: "POST", data: JSON.stringify({coll:"games"})}).success(function(data) {    
+    $http({url:'/getobjs', method: "POST", data: JSON.stringify({coll:"games", sort: {_id:-1}})}).success(function(data) {    
       $scope.games = data.obj.objs;
     });
   }   
