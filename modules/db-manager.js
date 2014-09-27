@@ -39,7 +39,9 @@ var options = {server: { autoReconnect: true, socketOptions:{ keepAlive: 1 }}};
 
 
 DB.redis = redis.createClient(6379,config.redisHost);
-
+DB.redis.on("error", function(err) {
+    console.error("Error connecting to redis", err);
+});
 module.exports = DB;
 
 
