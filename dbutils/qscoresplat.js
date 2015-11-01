@@ -1,8 +1,8 @@
-var newdb = "scopa.digitalmoka.com/giochipiu";
+var newdb = "dmokamongo.cloudapp.net/giochipiu";
 //var newdb = "www.scopapiu.it/giochipiu";
 var collect = "scopa.scores";
 
-var numGG = 120;
+var numGG = 5;
 var endDate = ISODate();
 var startDate = new Date(endDate);
 startDate.setDate(startDate.getDate() - numGG);

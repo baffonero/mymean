@@ -121,7 +121,7 @@ function ModelsDAO(db) {
    this.getPastStats = function(coll, query, callback) {
         "use strict";
 
-        var numlastDays = 7;
+        var numlastDays = 8;
         var numlastMonth = 30;
 
         var resObj = {}; 

@@ -39,6 +39,7 @@ var express = require('express.io')
     } */   
     function(accessToken, refreshToken, profile, done) {
       admins.findOrCreate(profile._json, function(err, user) {
+	      console.log(err, profile._json);
           if (err) {
             return done(err, null); 
           } else {

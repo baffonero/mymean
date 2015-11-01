@@ -1,4 +1,4 @@
-var newdb = "scopa.digitalmoka.com/giochipiu";
+var newdb = "dmokamongo.cloudapp.net/giochipiu";
 var collect = "users";
 var collect2 = "scopa.badges";
 

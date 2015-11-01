@@ -1,0 +1,6 @@
+MongoDB shell version: 2.6.11
+connecting to: test
+connecting to: dmokamongo.cloudapp.net/giochipiu
+Badge, Totali
+2015-10-07T16:12:52.699+0000 TypeError: Cannot call method 'forEach' of undefined at qachiev.js:12
+failed to load: qachiev.js
